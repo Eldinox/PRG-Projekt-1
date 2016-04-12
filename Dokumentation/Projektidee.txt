@@ -91,4 +91,8 @@ Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository p
 Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
 Viele Grüße,
+<<<<<<< HEAD
 Markus Alpers
+=======
+Markus Alpers
+>>>>>>> c1c2e0af6cf9df71dfdea60ccefb65599759cbc7
