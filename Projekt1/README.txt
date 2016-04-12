@@ -1,1 +1,1 @@
-Projektidee für ein kleines Geschicklichkeitsspiel
+Projektidee fuer ein kleines Geschicklichkeitsspiel
