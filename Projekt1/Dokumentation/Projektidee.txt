@@ -15,6 +15,8 @@ Der Score wird am Ende auf dem Computer gespeichert.
 
 Das ist eine sehr gute Beschreibung im Sinne der Vorgaben. Es fehlen zwar an der ein oder anderen Stelle die Details, aber das ist normal, denn Projekte bestehen daraus, dass Beschreibungen kontinuierlich überarbeitet werden. Arbeiten Sie deshalb damit weiter.
 
+Es gibt nur ein Manko: Sie haben innerhalb des Repositories ein Verzeichnis Projekt1 angelegt und erst in diesem Unterverzeichnis das Verzeichnis Dokumentation angelegt. Das Verzeichnis Dokumentation sollte aber direkt im Repository (also parallel zu Projekt1) stehen. Bitte ändern Sie das noch ab, damit jeder, der auf Ihr Repository zurückgreift sofort das Verzeichnis Dokumentation sieht.
+
 === Zweiter Aufgabenblock (identisch für alle Studierenden) ===
 
 Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
