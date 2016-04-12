@@ -1,0 +1,10 @@
+Projektidee
+
+Meine Idee für Projekt 1 ist ein Spiel. 
+Dabei soll ein Spieler Gegenstände in bestimmter Reihenfolge einsammeln.
+Währenddessen muss er Gefahren wie Projektilen und Gegnern ausweichen.
+Wurden alle Gegenstände eingesammelt erreicht man das nächste Level.
+Für jedes Level gibt es eine Zeitvorgabe.
+Die übrige Zeit wird nach jedem Level zum Score addiert.
+Wird man getroffen oder die Zeit läuft ab verliert man.
+Der Score wird am Ende auf dem Computer gespeichert.
