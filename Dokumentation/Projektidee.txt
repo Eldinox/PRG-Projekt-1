@@ -91,8 +91,25 @@ Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository p
 Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
 Viele Grüße,
-<<<<<<< HEAD
 Markus Alpers
-=======
-Markus Alpers
->>>>>>> c1c2e0af6cf9df71dfdea60ccefb65599759cbc7
+
+===================================
+=== Feedback Alpers, 2016-05-04 ===
+===================================
+
+Beim letzten Feedback habe ich leider zwei Punkte nicht deutlich angesprochen:
+
+- Interaktion: Sie haben (durch die üblichen Elemente in Action-Games) schon eine kleine Sammlung interaktiver Elemente aufgebaut, aber eines fehlt noch: Momentan würde ich davon ausgehen, dass das Spiel bei jeder Partie gleichartig die Gefahren auslöst. Damit eine echte Interaktion ins Spiel kommt, sollte außerdem noch ein Mechanismus integriert werden, durch den die Partien für jeden Spieler individualisiert werden. Das Spiel soll also in Abhängigkeit von einzelnen Spielern (bzw. deren Vorgehen) die Fallen und Gefahren für jede Partie anpassen.
+
+- Webbasiert: Momentan ist Ihre Beschreibung so formuliert, dass das Spiel auch auf einem nicht-vernetzen Rechner laufen könnte. Ergänzen Sie die Beschreibung so, dass es wirklich webbasiert ist. Die einfachste Möglichkeit wäre die, dass mehrere Spieler gemeinsam in einem Level unterwegs sein könnten. (Wobei dann die Konzeption der oben geschilderte Erweiterung der Interaktion eine echte Herausforderung wäre.)
+
+Wertung 2: Projektbeschreibung: gesamt: 7 / 10
+- Pro Interaktionsmöglichkeit: 2 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+
+=====================
+=== Feedback Ende ===
+=====================
