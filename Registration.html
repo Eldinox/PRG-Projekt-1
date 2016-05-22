@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=de>
+	<head>
+		<meta charset=UTF-8>
+		<title>Registrieren - Escape the Haunted House</title>
+	</head>
+	<body style=background-color:grey;>  <!-- Vorerst nur Hintergrundfarbe als Platzhalter | Musik fehlt noch-->
+		<header>
+			<h1>Escape the Haunted House</h1>  <!-- Vielleicht später als Banner -->
+		</header>	
+		<main>
+			<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit einen Account zu erstellen 
+				Bei einem Fehler oder erfolgreicher Registrierung erscheint ein Pop-Up Fenster-->
+			<article>
+				<h2>Erstelle einen Account</h2>
+				<p>Benutzername: <input type=username name=registerName required autofocus></p>
+				<p>Passwort: <input type=password name=registerPasswort></p>
+				<p>Passwort wiederholen: <input type=password name=registerPasswortCheck></p>
+				<p><button id=registerButton type=button>Registrieren</button></p>
+				<!-- Wenn Fehler:
+					<p>Registrierung konnte nicht abgeschlossen werden. Der Username wird bereits verwendet/Das Passwort
+					wurde falsch wiederholt</p>. 
+					Wenn Erfolgreich:
+					<p>Registrierung war erfolgreich</p> -->
+			</article>
+		</main>
+	</body>
+</html>
