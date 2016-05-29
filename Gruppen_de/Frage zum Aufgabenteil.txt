@@ -1,0 +1,1 @@
+Keine meiner Gruppen kommt in der gleichen Form mehrmals vor. Ist es trotzdem sinnig für Dinge wie Tabellen oder Menüs, die ich nicht als einzelne Gruppe erstellt habe, hier den Code zu schreiben obwohl sie nur einmal vorkommen?
