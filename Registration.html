@@ -10,18 +10,19 @@
 		</header>	
 		<main>
 			<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit einen Account zu erstellen 
-				Bei einem Fehler oder erfolgreicher Registrierung erscheint ein Pop-Up Fenster -->
+				Bei einem Fehler oder erfolgreicher Registrierung erscheint ein Pop-Up Fenster
+			    (wird später mit CSS verborgen und erscheint nur beim jeweiligen Fehler) -->
 			<article>
 				<h2>Erstelle einen Account</h2>
 				<p>Benutzername: <input type=username name=registerName required autofocus></p>
 				<p>Passwort: <input type=password name=registerPasswort></p>
 				<p>Passwort wiederholen: <input type=password name=registerPasswortCheck></p>
-				<p><button id=registerButton type=button>Registrieren</button></p>
-				<!-- Wenn Fehler:
+				<p><form action=Index.html><input type=submit value=Registrieren></form></p>
+				<!-- Wenn Fehler: -->
 					<p>Registrierung konnte nicht abgeschlossen werden. Der Username wird bereits verwendet/Das Passwort
-					wurde falsch wiederholt</p>. 
-					Wenn Erfolgreich:
-					<p>Registrierung war erfolgreich</p> -->
+					wurde falsch wiederholt</p> 
+				<!--	Wenn Erfolgreich: -->
+					<p>Registrierung war erfolgreich</p> 
 			</article>
 		</main>
 	</body>
