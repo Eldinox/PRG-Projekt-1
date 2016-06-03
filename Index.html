@@ -11,15 +11,23 @@
 		<main>
 			<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit zum einloggen oder 
 				registrieren falls noch kein Account besteht -->
-			<article>
-				<h2>Login!</h2>
-				<p>Benutzername: <input type=username name=username required autofocus></p>
-				<p>Passwort: <input type=password name=passwort></p>
-				<p>
-					<form action=Mainmenu.html><input type=submit value=Login></form>
-					<form action=Registration.html><input type=submit value="Hier Registrieren"></form>
-				</p>	
-			</article>
+			<div class=container>
+					<h2>Login!</h2>
+					<table id=loginMaske>
+						<tr>
+							<td>Benutzername: </td>
+							<td><input type=username name=username required autofocus></td>
+						</tr>
+						<tr>
+							<td>Passwort: </td>
+							<td><input type=password name=passwort></td>
+						</tr>
+					</table>		
+					<p class=loginButtons>
+						<a id=button href=Mainmenu.html>Login</a>
+						<a id=button href=Registration.html>Hier Registrieren</a>
+					</p>
+			</div>	
 		</main>
 	</body>
 </html>

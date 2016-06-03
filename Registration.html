@@ -14,15 +14,32 @@
 			    (wird später mit CSS verborgen und erscheint nur beim jeweiligen Fehler) -->
 			<article>
 				<h2>Erstelle einen Account</h2>
-				<p>Benutzername: <input type=username name=registerName required autofocus></p>
-				<p>Passwort: <input type=password name=registerPasswort></p>
-				<p>Passwort wiederholen: <input type=password name=registerPasswortCheck></p>
-				<p><form action=Index.html><input type=submit value=Registrieren></form></p>
+					<table id=registerMaske>
+						<tr>
+							<td>Benutzername: </td>
+							<td><input type=username name=registerName required autofocus></td>
+						</tr>
+						<tr>
+							<td>Passwort: </td>
+							<td><input type=password name=registerPasswort></td>
+						</tr>
+						<tr>
+							<td>Passwort wiederholen: </td>
+							<td><input type=password name=registerPasswortCheck></td>
+						</tr>
+					</table>
+					<p class=registerButton>
+						<a id=button href=Index.html>Registrieren</a>
+					</p>
 				<!-- Wenn Fehler: -->
-					<p>Registrierung konnte nicht abgeschlossen werden. Der Username wird bereits verwendet/Das Passwort
-					wurde falsch wiederholt</p> 
+					<div id=registerFehler>
+						<p>Registrierung konnte nicht abgeschlossen werden. Der Username wird bereits verwendet/Das Passwort
+						   wurde falsch wiederholt</p> 
+					</div>	   
 				<!--	Wenn Erfolgreich: -->
-					<p>Registrierung war erfolgreich</p> 
+					<div id=registerBestätigung>
+						<p>Registrierung war erfolgreich</p> 
+					</div>
 			</article>
 		</main>
 	</body>

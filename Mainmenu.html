@@ -11,13 +11,15 @@
 		<main>
 			<!-- MainContainer zeigt später in der Bildschirmmitte Schaltflächen um das Spiel zu starten, zu den Einstellungen
 				zu gelangen, die Hilfe zu sehen, die Highscoreliste zu sehen oder sich auszuloggen -->
-			<article>
-				<p><button id=mainMenuStartButton type=button>Spiel starten</button></p>
-				<p><button id=optionsButton type=button>Optionen</button></p>
-				<p><button id=helpButton type=button>Hilfe</button></p>
-				<p><button id=highscoreListButton type=button>Highscore</button></p>
-				<p><button id=logoutButton type=button>Ausloggen</button></p>
-			</article>
+			<div id=mainMenuButtons>
+				<article>
+					<p><a id=button href=GamemodeSelect.html>Spiel starten</a></p>
+					<p><a id=button href=Options.html>Optionen</a></p>
+					<p><a id=button href=Help.html>Hilfe</a></p>
+					<p><a id=button href=Highscore.html>Highscore</a></p>
+					<p><a id=button href=Index.html>Ausloggen</a></p>
+				</article>
+			</div>	
 		</main>
 		<aside>
 			<!-- In seperater Box an der rechten oder linken Seite ist das persönliche Spielerprofil mit Namen, Bild und Statistiken zu sehen
