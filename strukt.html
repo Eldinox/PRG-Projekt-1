@@ -7,131 +7,187 @@
 
 <body>
 	<!-- 
-		=== Strukturelle Elemente (14.05.2016) ===
+		=== Strukturelle Elemente (04.07.2016) ===
+
+		-001-		Hintergrundbild
+		-002-		Hintergrundmusik
+		-003-		Textcontainer / "Escape the Haunted House"
+		-004-		Textcontainer / "Username:" 	
+		-005- 		Textcontainer / "Passwort:"
+		-006-		Textcontainer / "Passwort wiederholen:"
+		-007-		Textcontainer / Status der Registrierung (Daten in Ordnung / bereits vergeben)
+		-008-		Textcontainer / Neuigkeiten
+		-009-		Textcontainer / Username
+		-010-		Textcontainer / "Beste Zeit im Singleplayer"
+		-011-		Textcontainer / ... Spiele von ... Spielen gewonnen (Winrate in %)
+		-012-		Textcontainer / Ranglistenplatz
+		-013-		Textcontainer / "Optionen"
+		-014-		Textcontainer / "Highscore"
+		-015-		Textcontainer / "Hilfe"
+		-016-		Textcontainer / Erklärung zum Spiel
+		-017-		Textcontainer / "Wähle einen Spielmodus"
+		-018-		Textcontainer / kleines Intro in die Geschichte
+		-019-		Textcontainer / Gesundheitszustand
+		-020-		Textcontainer / Score
+		-021-		Textcontainer / verbleibende Zeit
+		-022-		Textcontainer / "Game Over"
+		-023-		Textcontainer / "Gewonnen!"
+		-024-		Textcontainer / zeigt erreichte Zeit und Score
+		-025-		Bildcontainer / Profilbild
+		-026-		Textfeld / Eingabe Username
+		-027-	 	Textfeld / Eingabe Passwort (verschlüsselt)
+		-028-		Textfeld / Wiederholung Passwort (verschlüsselt)
+		-029-		Textfeld / Suche von Spielern um deren Profil anzuzeigen
+		-030-		Schaltfläche / "Einloggen"
+		-031-		Schaltfläche / "Registrieren"
+		-032-		Schaltfläche / "Spiel starten"
+		-033-		Schaltfläche / "Optionen"
+		-034-		Schaltfläche / "Hilfe"
+		-035-		Schaltfläche / "Highscoreliste"
+		-036-		Schaltfläche / "Ausloggen"
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-038-		Schaltfläche / "Singleplayer"
+		-039-		Schaltfläche / "Multiplayer"
+		-040-		Schaltfläche / "Singleplayer Modus"
+		-041-		Schaltfläche / "Multiplayer Modus"
+		-042-		Schaltfläche / "Skip"
+		-043-		Schaltfläche / "Fortsetzen"
+		-044-		Schaltfläche / "Neu Starten"
+		-045-		Tabelle 2x3 / zeigt Spielerstatistik
+		-046-		Tabelle 3x10 / zeigt die besten 10 gespeicherten Spielstände
+		-047-		Tabelle 2x3 / zeigt Status im Spiel (Gesundheit, Zeit...)
+		-048-		Liste / enthällt die veränderbaren Optionen
+		-049-		Schieberegler / Anpassen der Musiklautstärke
+		-050-		Spielobjekt / Spielfigur
+		-051-		Spielobjekt / Item
+		-052-		Spielobjekt / Gegner
+		-053-		Spielobjekt / Hindernis
+		-054-		Interaktionsmöglichkeit / Spieler läuft nach oben
+		-055-		Interaktionsmöglichkeit / Spieler läuft nach unten
+		-056-		Interaktionsmöglichkeit / Spieler läuft nach rechts
+		-057-		Interaktionsmöglichkeit / Spieler läuft nach links
+		-058-		Interaktionsmöglichkeit / Spieler benutzt Spezialfähigkeit
+		-059-		Interaktionsmöglichkeit / Spiel pausieren
+
+
 		
+		=== Gruppen (04.07.2016) ===
+
+		I. LoginScreen
+		-003-		Textcontainer / "Escape the Haunted House"
+		-004-		Textcontainer / "Username:" 	
+		-005- 		Textcontainer / "Passwort:"
+		-026-		Textfeld / Eingabe Username
+		-027-	 	Textfeld / Eingabe Passwort (verschlüsselt)
+		-030-		Schaltfläche / "Einloggen"
+		-031-		Schaltfläche / "Registrieren"
+
+		II. Registrierung
+		-003-		Textcontainer / "Escape the Haunted House"
+		-004-		Textcontainer / "Username:" 	
+		-005- 		Textcontainer / "Passwort:"
+		-006-		Textcontainer / "Passwort wiederholen:"
+		-007-		Textcontainer / Status der Registrierung (Daten in Ordnung / bereits vergeben)
+		-026-		Textfeld / Eingabe Username
+		-027-	 	Textfeld / Eingabe Passwort (verschlüsselt)
+		-028-		Textfeld / Wiederholung Passwort (verschlüsselt)
+		-031-		Schaltfläche / "Registrieren"
+
+		III. MainMenu
+		-032-		Schaltfläche / "Spiel starten"
+		-033-		Schaltfläche / "Optionen"
+		-034-		Schaltfläche / "Hilfe"
+		-035-		Schaltfläche / "Highscoreliste"
+		-036-		Schaltfläche / "Ausloggen"
+
+		IV. UserProfile
+		-009-		Textcontainer / Username
+		-010-		Textcontainer / "Beste Zeit im Singleplayer"
+		-011-		Textcontainer / ... Spiele von ... Spielen gewonnen (Winrate in %)
+		-012-		Textcontainer / Ranglistenplatz
+		-025-		Bildcontainer / Profilbild
+		-045-		Tabelle 2x3 / zeigt Spielerstatistik
+		
+		V. Optionsmenu
+		-013-		Textcontainer / "Optionen"
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-048-		Liste / enthällt die veränderbaren Optionen
+		-049-		Schieberegler / Anpassen der Musiklautstärke
+		
+		VI. Highscoreliste
+		-014-		Textcontainer / "Highscore"
+		-029-		Textfeld / Suche von Spielern um deren Profil anzuzeigen
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-038-		Schaltfläche / "Singleplayer"
+		-039-		Schaltfläche / "Multiplayer"
+		-046-		Tabelle 3x10 / zeigt die besten 10 gespeicherten Spielstände
+
+		VII. Helpmenu
+		-015-		Textcontainer / "Hilfe"
+		-016-		Textcontainer / Erklärung zum Spiel
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+
+		VIII. ModeSelection
+		-017-		Textcontainer / "Wähle einen Spielmodus"
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-040-		Schaltfläche / "Singleplayer Modus"
+		-041-		Schaltfläche / "Multiplayer Modus"
+
+		IX. Intro
+		-018-		Textcontainer / kleines Intro in die Geschichte
+		-042-		Schaltfläche / "Skip"
+
+		X. PlayerStatus
+		-009-		Textcontainer / Username
+		-019-		Textcontainer / Gesundheitszustand
+		-020-		Textcontainer / Score
+		-021-		Textcontainer / verbleibende Zeit
+		-047-		Tabelle 2x3 / zeigt Status im Spiel (Gesundheit, Zeit...)
+
+		XI. Playfield
+		-050-		Spielobjekt / Spielfigur
+		-051-		Spielobjekt / Item
+		-052-		Spielobjekt / Gegner
+		-053-		Spielobjekt / Hindernis
+		-054-		Interaktionsmöglichkeit / Spieler läuft nach oben
+		-055-		Interaktionsmöglichkeit / Spieler läuft nach unten
+		-056-		Interaktionsmöglichkeit / Spieler läuft nach rechts
+		-057-		Interaktionsmöglichkeit / Spieler läuft nach links
+		-058-		Interaktionsmöglichkeit / Spieler benutzt Spezialfähigkeit
+		-059-		Interaktionsmöglichkeit / Spiel pausieren
+
+		XII. Pausemenu
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-043-		Schaltfläche / "Fortsetzen"
+		-044-		Schaltfläche / "Neu Starten"
+
+		XIII. Gameover
+		-022-		Textcontainer / "Game Over"
+		-024-		Textcontainer / zeigt erreichte Zeit und Score
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-044-		Schaltfläche / "Neu Starten"
+
+		XIV. Victory
+		-023-		Textcontainer / "Gewonnen!"
+		-024-		Textcontainer / zeigt erreichte Zeit und Score
+		-037-		Schaltfläche / "Zurück zum Hauptmenü"
+		-044-		Schaltfläche / "Neu Starten"
+
+
+		
+		=== Ansichten (in Arbeit) ===
+
 		--- view_Index ---
-LoginScreen	I.		-001- 		Hintergrundbild
-		I.		-002- 		Hintergrundmusik
-		I.		-003-		Textcontainer / "Escape the Haunted House"
-		I.		-004- 		Textcontainer / "Username:" 	
-		I.		-005- 		Textcontainer / "Passwort:"
-		I.		-006- 		Textfeld / Eingabe Username
-		I.		-007- 		Textfeld / Eingabe Passwort (verschlüsselt)
-		I.		-008- 		Schaltfläche / "Einloggen"
-		I.   		-009-		Schaltfläche / "Registrieren"	
-		
 		--- view_Registration ---
-Registration	II.		-010-		Hintergrundbild
-		II.		-011- 		Hintergrundmusik
-		II.		-012-		Textcontainer / "Escape the Haunted House"
-		II.		-013- 		Textcontainer / "Username:" 	
-		II.		-014- 		Textcontainer / "Passwort:"
-		II.		-015- 		Textcontainer / "Passwort wiederholen:"
-		II. 		-016-		Textfeld / Eingabe Username
-		II.		-017- 		Textfeld / Eingabe Passwort (verschlüsselt)
-		II. 		-018-		Textfeld / Wiederholung Passwort (verschlüsselt)
-		II.		-019-		Schaltfläche / "Registrieren"
-		Nur Sichtbar wenn...		
-		II. 		-020-		Textcontainer / "Registrierung erfolgreich" (... eingegebene Daten in Ordnung)
-		II.		-021-		Textcontainer / "Fehler! 'Fehlermeldung'" (... Name vergeben, Passwort falsch wiederholt)
-		
-		--- view_Mainmenu ---		
-Mainmenu	III.		-022-		Hintergrundbild
-		III.		-023-		Hintergrundmusik	
-		III.		-024-		Textcontainer / "Escape the Haunted House"
-MainmenuButtons	IV.		-025- 		Schaltfläche / "Spiel starten"
-		IV.		-026- 		Schaltfläche / "Optionen"
-		IV.		-027- 		Schaltfläche / "Hilfe"
-		IV.		-028- 		Schaltfläche / "Highscoreliste"
-		IV.		-029- 		Schaltfläche / "Ausloggen"
-UserProfile	V.		-030-		Textcontainer / Username
-		V.		-031-		Bildcontainer / Profilbild
-		V.		-032-		Tabelle 2x3 / Persönliche Statistik
-		V.		-033-		Textcontainer / "Beste Zeit im Singleplayer"
-		V.		-034-		Textcontainer / ... Spiele von ... Spielen gewonnen (Winrate in %)
-		V.		-035-		Textcontainer / Ranglistenplatz
-		
+		--- view_Mainmenu ---
 		--- view_Options ---
-Optionsmenu	VI.		-036-		Hintergrundbild				
-		VI. 		-037-		Hintergrundmusik
-		VI.		-038-		Textcontainer / "Optionen"
-		VI.		-039-		Liste / enthällt die veränderbaren Einstellungen
-		VI.		-040-		Schieberegler / Anpassen der Musiklautstärke
-		VI.		-041- 		Schaltfläche / "Zurück zum Hauptmenü"
-				
 		--- view_Highscore ---
-Highscoreliste	VII.		-042-		Hintergrundbild
-	 	VII.		-043-		Hintergrundmusik
-	 	VII.		-044-		Textcontainer / "Highscore"
-	 	VII.		-045-		Schaltfläche / "Singleplayer"/"Multiplayer" (je nachdem welche Liste gerade gezeigt wird)
-	 	VII.		-046-		Tabelle 3x10 / zeigt die besten 10 gespeicherten Spielstände	
-	 	VII.		-047-		Schaltfläche / "Zurück zum Hauptmenü"
-	 	VII.		-048-		Textfeld / Suche von Spielern um deren Profil anzuzeigen
-PlayerProfile	VIII.		-049-		Textcontainer / Username
-		VIII.		-050-		Bildcontainer / Profilbild
-		VIII.		-051-		Tabelle 2x3 / Persönliche Statistik
-		VIII.		-052-		Textcontainer / "Beste Zeit im Singleplayer"
-		VIII.		-053-		Textcontainer / ... Spiele von ... Spielen gewonnen (Winrate in %)
-		VIII.		-054-		Textcontainer / Ranglistenplatz	
-		
 		--- view_Help ---
-Helpmenu	IX.		-055-		Hintergrundbild
-		IX.		-056-		Hintergrundmusik
-		IX.		-057-		Textcontainer / "Hilfe"
-		IX.		-058-		Textcontainer / Erklärung zum Spiel
-		IX.		-059-		Schaltfläche / "Zurück zum Hauptmenü"
-		
 		--- view_GamemodeSelect ---
-ModeSelection	X.		-060-		Hintergrundbild
-		X.		-061-		Hintergrundmusik
-		X.		-062-		Textcontainer / "Wähle einen Spielmodus"
-		X.		-063- 		Schaltfläche / "Singleplayer Modus"
-		X.		-064-		Schaltfläche / "Multiplayer Modus"
-		X.		-065-		Schaltfläche / "Zurück zum Hauptmenü"
-		
 		--- view_Intro ---
-Intro		XI.		-066-		Hintergrundbild
-		XI.		-067-		Hintergrundmusik
-		XI.		-068-		Textcontainer / Kleines Intro in die Geschichte
-		XI.		-069-		Schaltfläche / "Skip"
-			
 		--- view_InGame ---
-PlayerStatus	XII.		-070-		Textcontainer / Username
-		XII.		-071-		Tabelle 2x3 / Zeigt wichtige Daten
-		XII.		-072-		Textcontainer / Gesundheitszustand
-		XII.		-073-		Textcontainer / Score
-		XII. 		-074-		Textcontainer / verbleibende Zeit
-Playfield	XIII.		-075-		Hintergrundbild
-		XIII.		-076-		Hintergrundmusik
-		XIII.		-077-		Spielobjekt / Spielfigur
-		XIII.		-078-		Spielobjekt / Item
-		XIII.		-079-		Spielobjekt / Gegner
-		XIII.		-080-		Spielobjekt / Hindernis
-		XIII.		-081- 		Interaktionsmöglichkeit / Spieler läuft nach oben
-		XIII.		-082- 		Interaktionsmöglichkeit / Spieler läuft nach unten
-		XIII.		-083- 		Interaktionsmöglichkeit / Spieler läuft nach rechts
-		XIII.		-084- 		Interaktionsmöglichkeit / Spieler läuft nach links
-		XIII.		-085- 		Interaktionsmöglichkeit / Spieler benutzt Spezialfähigkeit
-		(Pausemenü erscheint als Overlay bei Knopfdruck)
-Pausemenu	XIV.		-086- 		Schaltfläche / "Fortsetzen"
-		XIV.		-087-		Schaltfläche / "Neu Starten"
-		XIV.		-088-		Schaltfläche / "Zurück zum Hauptmenü"
-		
 		--- view_GameOver ---
-Gameover	XV.		-089-		Hintergrundbild
-		XV.		-090-		Hintergrundmusik
-		XV.		-091-		Textcontainer / "Game Over"
-		XV.		-092- 		Textcontainer / Zeigt erreichte Zeit und Score
-		XV.		-093-		Schaltfläche / "Neu Starten"
-		XV.		-094-		Schaltfläche / "Zurück zum Hauptmenü"
-		
 		--- view_Victory ---
-Victory		XVI.		-095-		Hintergrundbild
-		XVI.		-096-		Hintergrundmusik
-		XVI.		-097-		Textcontainer / "Gewonnen!"
-		XVI.		-098- 		Textcontainer / Zeigt erreichte Zeit und Score
-		XVI.		-099-		Schaltfläche / "Neu Starten"
-		XVI.		-100-		Schaltfläche / "Zurück zum Hauptmenü"
 	-->
 </body>
 </html>	
@@ -195,114 +251,30 @@ Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 1 / 10
 - Knappe Form: 2
 - Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen): 1
 - Vermischung strukt. Elem., Gruppierung, Abläufe usw.: -2
+-->
 
-Da Sie in der Beschreibung bereit gute Ergebnisse erreicht haben und die strukturellen Elemente ebenfalls gute Ansätze zeigen, können Sie anschließend die folgende Aufgabe bearbeiten:
-
+<!--
 ======================================================
 === Aufgabe 3, identisch für alle, die soweit sind ===
 ======================================================
+(gelöscht, da im Lernraum für alle einsehbar)
+-->
 
-ACHTUNG! Bearbeiten Sie diese Aufgaben dann und NUR DANN, wenn ich Sie in Ihr Repository geladen habe.
+<!-- 
+==================================
+=== Ihre Frage zur strukt.html ===
+==================================
 
-Sie haben jetzt eine Grundstruktur für Ihre Anwendung ausgearbeitet. Genauer gesagt haben Sie die Elemente der Struktur Ihrer Anwendung ausgearbeitet. Jetzt geht es um die folgenden Aufgaben, die Sie bitte wieder alleine bearbeiten. (Bitte werfen Sie außerdem in Projekte anderer Studierender, wie das schon bei der letzten Aufgabe der Fall war. Es ist durchaus möglich, dass die nochmal zurück zur ersten Aufgabe gehen und das Projekt massiv ändern mussten. In dem Fall unterstützen Sie dann bitte wieder mit Ergänzungen zur strukt.html.)
+Keine meiner Gruppen kommt in der gleichen Form mehrmals vor. Ist es trotzdem sinnig für Dinge wie Tabellen oder Menüs, 
+die ich nicht als einzelne Gruppe erstellt habe, hier den Code zu schreiben obwohl sie nur einmal vorkommen?
 
 ===================================
-== (1) Strukturierung von Ansichten
+=== Feedback Alpers, 2016-06-14 ===
 ===================================
 
-Für die folgende Aufgabe gilt: Arbeiten Sie hier mit der Datei strukt.html weiter.
-Lassen Sie die bisher erstellen Notizen zu jedem strukturellen Element am Anfang stehen und nummerieren Sie sie fortlaufend. Wenn Sie weitere Element hinzufügen, dann ändern Sie keinesfalls die bisherige Nummerierung ab, sondern fügen Sie neue Elemente ans Ende der fortlaufenden Nummerierung an. Sie können jedoch (um deutlich zu machen, das später eine Ergänzung folgt) kleine Hinweise verfassen.
-
-Hier ein Beispiel: Bislang haben Sie 97 strukturelle Elemente definiert:
-
--01- Interaktionsmöglichkeit / laufen nach links
--02- Interaktionsmöglichkeit / laufen nach rechts
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
-
-Jetzt fällt Ihnen ein, dass Sie eine Interaktion "springen" gut wäre. Fügen Sie die jetzt nicht als Nr. 3 ein, sondern ans Ende. Wenn Sie sicher gehen wollen, können Sie einen Kommentar hinter dem strukturellen Element einfügen, zu dem es Ihrer Ansicht nach am besten passt.)
-
--01- Interaktionsmöglichkeit / Spielfigur: Laufen nach links
--02- Interaktionsmöglichkeit / Spielfigur: Laufen nach rechts (Ergänzung: springen siehe -98-)
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
--98- Interaktionsmöglichkeit / Spielfigur: springt
-
-=======================
-== (1.1) Gruppen bilden
-=======================
-
-Nehmen Sie nun Ihre strukturellen Elemente und stellen Sie jeweils diejenigen zusammen, die ein sinnvolles Ganzes ergeben. Ein einfaches Beispiel dafür wäre eine Log-In-Maske: Darin hätten Sie ein Eingabefeld für den Username und das Passwort, aber ggf. auch weitere Elemente (denken Sie an so etwas wie ein Captcha, oder eine Eingabefläche, in der Nutzer ein Muster eingeben müssen anstelle eines Passworts.)
-
-Nummerieren Sie die resultierenden Gruppen bitte mit römischen Ziffern.
-
-Denken Sie dabei daran, dass es Elemente geben wird, die in mehreren Gruppen sinnvoll sein. Z.B. kann die Anzeige des Username nach dem Log-In an mehreren Stellen genutzt werden. Deswegen ist es wichtig, dass Sie die Elemente nummerieren und Ihnen einen kurzen Namen geben. Der Name ist gleichzeitig eine Vorbereitung auf die Verwendung durch PHP. Die Nummer ist nur da, weil es in aller Regel einfacher ist, nach Zahlen zu sortieren als alphbetisch nach Namen.
-
-=========================
-== (1.2) Ansichten bilden
-=========================
-
-Gruppieren Sie nun die erhaltenen Gruppen so zusammen, dass Sie Ansichten erhalten. Mit einer Ansicht ist hier gemeint, dass es sich um eine Ansammlung von strukturellen Elementen handelt, die gleichzeitig angezeigt werden. Sie werden unter Umständen feststellen, dass Ihre Anwendung nur eine einzige Ansicht hat, aber das ist im Moment in Ordnung. Ggf. werde ich Ihnen Hinweise geben, was für Ansichten Sie noch erstellen sollten.
-
-Auch die Ansichten sollten einen Namen bekommen. Hier brauchen wir aber keine Zahlen. Benennen Sie die Ansichten als 
------------------
---- view_name ---
------------------
-, wobei name der Name ist, den Sie der Ansicht geben wollen. (Tipp: Wenn bei Ihnen eines oder mehrere Elemente tatsächlich view_name... heißen, haben Sie das missverstanden.) Es sollte sich dabei um einen Namen handeln, der ohne Internationalisierung auf jedem Rechner angezeigt werden kann. (Ersetzen Sie Umlaute ggf. durch mehrere Buchstaben.)
-
-Unterhalb notieren Sie dann ohne Hinweis auf die Anordnung die strukturellen Elemente.
-
-Prüfen Sie erst am Ende, welche der Ansichten als allererstes angezeigt werden soll und bennen Sie die in view_index um.
-
-====================
-== (2.) Erstes HTML
-====================
-
-Erstellen Sie jetzt für jede view_name ein HTML-Dokument mit dem Namen einer Ansicht.
-Programmieren Sie darin die Container, die den strukturellen Elementen entsprechen und tragen Sie jeweils als kurzen Kommentar ein, welcher Inhalt/welche Funktionalität usw. mit diesem Container verbunden werden soll. Erweitern Sie jedes Dokument so, dass es internationalisiert und lokalisiert ist. Nutzen Sie ausschließlich Container, die für HTML5 vorgesehen sind. 
-
-Wenn Sie sich bereits in HTML4.01 eingearbeitet hatte: Im Skript können Sie anhand der Beispiele leicht prüfen, ob Ihre Programmierung passt. Ich kann Ihnen jedoch sagen, dass die meisten HTML4.01-Programmierer beim Umstieg auf Version 5 vergessen, dass Anführungszeichen weitgehend überflüssig sind und <div>-Container nicht ohne Grund nur ganz kurz in der Veranstaltung behandelt wurden: In 19 von 20 Fällen wir jetzt ein anderer Container für die gleiche Aufgabe verwendet. Auch das style-Attribut hat in HTML5 so gut wie nichts mehr verloren.
-
--- Bsp.: --
-<input id=username name=username><!-- Eingabe des Nutzernamens -->
-<img><!-- Hier das Logo der Seite einfügen -->
-
--- Wichtig: --
-Wenn Sie das Gefühl haben, Sie könnten eine Struktur z.B. mit einer for-Schleife ganz schnell programmieren, dann schreiben Sie diese Schleife (oder was auch immer Sie aus Java/PHP kennen) in einen <?php ?> Container. Es ist nicht wichtig, ob die Syntax und Semantik stimmt. Darum kümmern wir uns später. Wichtig ist nur, dass Sie sich keine unnötige Arbeit machen.
-
--- Ebenfalls wichtig: --
-Erstellen Sie ein Verzeichnis Gruppen_de in Ihrem Repository.
-
-Erstellen Sie für jede Gruppe, die Sie bei Schritt (1.1) gebildet haben und die in mehreren Ansichten vorkommt ein eigenständiges Dokument, das Sie unter dem Namen der Gruppe (ohne Nummer) im Verzeichnis Gruppen_de speichern. Nutzen Sie <?php include(url zur datei) ?>, um die entsprechenden Codefragmente an allen Stellen einzubinden, wo das nötig ist.
-
-=================================
-== (3.) Erste Schritte hin zu PHP
-=================================
-
-Sie haben in Programmieren 1 grundlegende imperative Programmiermethoden kennen gelernt. Und auch wenn die Syntax in PHP anders ist als in Java, können Sie doch vieles mit wenig Anpassung weiterverwenden, müssen "nur" daran denken, dass PHP dynamisch typisiert ist.
-
-Jetzt, wo Sie eine erste Struktur in HTML geschaffen haben, Formulare und interaktive Elemente programmiert haben, können Sie dazu übergehen, den Programmablauf bzw. die Logik bzw. die Interaktion zu programmieren. Und auch wenn das im Moment natürlich nicht funktionieren wird, machen Sie jetzt bitte folgendes: 
-
-Erstellen Sie jetzt eine Datei mit dem Namen php_code.php im Repository im Wurzelverzeichnis (also da, wo auch die HTML-Dokumente liegen). Ggf. werden Sie später zusätzliche PHP-Dateien erstellen, das müssen wir noch sehen.
-
-Wenn Sie mehrere Formulare entworfen haben, dann erstellen Sie ein Verzeichnis mit dem Namen Formulare im Repository und speichern Sie dort für jedes Formular (das ja eine Gruppe ist) unter dem Namen form_eval_gruppenname.php
-
-Und nun programmieren Sie so ähnlich wie Sie in Java programmieren würden. Wenn Sie sich nicht sicher sind, dann programmieren Sie genauso, als wenn es Java wäre; die PHP-Syntax lernen Sie ja in der Veranstaltung kennen und können dann den Code nach und nach anpassen.
-
-Wenn Sie nicht wissen, wie Sie etwas programmieren sollen (z.B. weil Sie keine Idee haben, wie Sie das Bild einer Schaltfläche per PHP austauschen sollen), dann tragen Sie das als Kommentar in den PHP/Java-Code ein.
-
-Denken Sie bitte daran, dass Variablen in PHP mit einem $ am Anfang geschrieben werden. Die Java-Variable summe wird also in PHP $summe notiert. Benutzen Sie für eigenen Variablen bitte vorrangig Kleinbuchstaben.
-
-Wenn Sie ein Formular auswerten, dann erzeugt PHP einen Dictionary mit dem Namen $POST, dessen Einträge die Namen der Formularfelder sind. Wenn Sie nicht wissen, was ein Dictionary ist: Das ist etwas, das so ähnlich wie ein Array funktioniert, nur dass die Einträge nicht nummeriert sind, sondern mit beliebigen Variablen bezeichnet werden können.
-
-Nehmen wir an, Sie hätten im HTML-Formular ein Feld mit dem Namen username und eines mit dem Namen password erstellt. Dann können Sie im zugehörigen PHP-Formular die Eingaben von Nutzern durch $POST[$username] bzw. $POST[$password] auslesen. Aber keine Sorge, wenn Ihnen das jetzt noch nicht ganz klar ist, warten Sie die nächsten zwei Veranstaltungen ab, dann werden wir das besprechen.
-
-===============================
-
-Wie gesagt sind das alles Aufgaben, die Sie wieder alleine bearbeiten sollen.
-Bei der nächsten Aufgabe werden Sie dann wieder an Projekten anderer Studierender arbeiten und so ein weiters Mal die geforderte Gruppenarbeit im Projekt leisten.
-
-Viele Grüße und viel Erfolg,
-Markus Alpers
+Wenn das der Fall wäre, dann hätten Sie Recht, dann wäre es nicht sinnvoll. Tatsache ist aber, dass Sie die Gruppen so definiert haben, dass Sie zahlreiche redundante Container programmieren müssen. Damit haben Sie leider gerade den Sinn dieses Aufgabenteils nicht umgesetzt.
+Denn der macht nur dann Sinn, wenn Sie zuerst eine Liste/einen Katalog der strukturellen Elemente notieren und hier prüfen, was mehrfach vorkommt. Diese mehrfach vorkommenden Elemente fliegen dann raus, damit Sie sie jeweils nur einmal programmieren müssen.
+Dann entwickeln Sie die Gruppen. Sobald Sie merken, dass in mehreren Gruppen bestimmte strukturelle Elemente in der gleichen Reihenfolge auftauchen, bedeutet das, dass Sie eine Gruppe übersehen haben: Genau diese Gruppe von Elementen, die Teil mehrerer Gruppen ist ist tatsächlich eine eigenständige Gruppe. Also definieren Sie sie auch nur einmal als Gruppe.
+Danach erst entwickeln Sie die Ansichten: Sie notieren jeweils, welche Gruppen gemeinsam eine Ansicht bilden. Dabei werden mehrere Gruppen in mehreren Ansichten auftauchen.
+Dabei werden Sie auch immer wieder feststellen, dass Sie nochmal strukturelle Elemente ergänzen müssen, Gruppen umgestalten usw. Wenn das passiert, dann arbeiten Sie die Änderungen hier nach und passen Sie anschließend den HTML- bzw. PHP-Code an.
+An der Wertung ändere ich dieses Mal nichts, weil dafür genau diese Arbeit relevant ist. Das bedeutet aber nicht, dass sich nichts geändert hat oder dass ich die Änderungen nicht sehen würde, sondern lediglich, dass ich sie im aktuellen Zustand nicht bewerten kann.
