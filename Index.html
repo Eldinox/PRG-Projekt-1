@@ -3,31 +3,22 @@
 	<head>
 		<meta charset=UTF-8>
 		<title>Login - Escape the Haunted House</title>
+		<link rel=stylesheet href=backgroundcolorSheet.css type=text/css>
 	</head>
-	<body style=background-color:grey;>  <!-- Vorerst nur Hintergrundfarbe als Platzhalter | Musik fehlt noch -->
+	<body>
 		<header>
 			<h1>Escape the Haunted House</h1>  <!-- Vielleicht später als Banner -->
 		</header>	
 		<main>
-			<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit zum einloggen oder 
-				registrieren falls noch kein Account besteht -->
-			<div class=container>
-				<h2>Login!</h2>
-				<table id=loginMaske>
-					<tr>
-						<td>Benutzername: </td>
-						<td><input type=username name=username required autofocus></td>
-					</tr>
-					<tr>
-						<td>Passwort: </td>
-						<td><input type=password name=passwort></td>
-					</tr>
-				</table>		
+		<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit zum einloggen oder 
+			registrieren falls noch kein Account besteht -->
+			<h2>Login!</h2>
+				<p><label for=username>Benutzername: </label><input type=username name=username required autofocus></p>
+				<p><label for=password>Passwort: </label><input type=password name=password></p>
 				<p class=loginButtons>
 					<a id=button href=Mainmenu.html>Login</a>
 					<a id=button href=Registration.html>Hier Registrieren</a>
 				</p>
-			</div>	
 		</main>
 	</body>
 </html>
