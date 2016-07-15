@@ -15,7 +15,7 @@ läuft ab verliert man. Vor Beginn des Spiels hat man im Menü die Wahl zwischen
 (Storymodus gegen KI) und Multiplayer (Spieler werden in zwei Teams aufgeteilt. Die eine 
 Seite versucht dem Haus zu entkommen, die andere übernimmt die Rolle der Gegner).
 Der Score wird am Ende gespeichert und die 10 besten Highscores können in einer
-Liste online angesehen werden.
+Liste online angesehen werden. 
 
 
 ===================================
