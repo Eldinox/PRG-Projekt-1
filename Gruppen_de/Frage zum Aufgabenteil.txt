@@ -14,3 +14,9 @@ Dann entwickeln Sie die Gruppen. Sobald Sie merken, dass in mehreren Gruppen bes
 Danach erst entwickeln Sie die Ansichten: Sie notieren jeweils, welche Gruppen gemeinsam eine Ansicht bilden. Dabei werden mehrere Gruppen in mehreren Ansichten auftauchen.
 
 Dabei werden Sie auch immer wieder feststellen, dass Sie nochmal strukturelle Elemente ergänzen müssen, Gruppen umgestalten usw. Wenn das passiert, dann arbeiten Sie die Änderungen hier nach und passen Sie anschließend den HTML- bzw. PHP-Code an.
+
+===================================
+=== Feedback Alpers, 2016-07-15 ===
+===================================
+
+Um das ganz deutlich zu machen: Programmieren Sie Ihre Gruppen hier; Ihre Views sind zurzeit schlecht ausgearbeitet und Sie werden rund die Hälfte davon letztlich löschen müssen. Wenn Sie also nicht die Gruppen hier programmieren, dann haben Sie letztlich sehr viel Zeit verschwendet.

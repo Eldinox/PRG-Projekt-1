@@ -378,3 +378,48 @@ Danach erst entwickeln Sie die Ansichten: Sie notieren jeweils, welche Gruppen g
 Dabei werden Sie auch immer wieder feststellen, dass Sie nochmal strukturelle Elemente ergänzen müssen, Gruppen umgestalten usw. Wenn das passiert, dann arbeiten Sie die Änderungen hier nach und passen Sie anschließend den HTML- bzw. PHP-Code an.
 
 An der Wertung ändere ich dieses Mal nichts, weil dafür genau diese Arbeit relevant ist. Das bedeutet aber nicht, dass sich nichts geändert hat oder dass ich die Änderungen nicht sehen würde, sondern lediglich, dass ich sie im aktuellen Zustand nicht bewerten kann.
+
+===================================
+=== Feedback Alpers, 2016-07-15 ===
+===================================
+
+(1) Zum Teil unterscheiden Sie noch nicht genaug genug zwischen Containern, die Text enthalten können:
+-005- Textcontainer / "Passwort:"
+Das ist ein Label-Container.
+
+-026- Textfeld / Eingabe Username
+Das ist ein input-Container vom Typ Text.
+
+-027- Textfeld / Eingabe Passwort (verschlüsselt)
+Hier gibts neben dem gleichen Problem wie bei den vorigen drei Beispielen ein Verständnisproblem: Es gibt in HTML keine Verschlüsselung. Darauf hatte ich in der Veranstaltung auch deutlich hingewiesen.
+Der Container, den Sie hier meinen ist ein input-Container vom Typ Password.
+
+III. MainMenu -032-	Schaltfläche / "Spiel starten"
+Hier geben Sie an, dass Sie eine Schaltfläche verwenden wollen. Umgangssprachlich ist das durchaus üblich, aber wenn wir etwas als ein Menü realisieren, dann sind die Elemente des Menüs z.B. Optionscontainer. Sie können Sie auch als Element oder Eintrag bezeichnen. Denn bei Menüs ist im Regelfall alles anwählbar.
+
+-009- Textcontainer / Username
+Einen Textcontainer im eigentlichen gibt es nicht. Es gibt Absätze, Sections, Details, Summaries usw. usf. Prüfen Sie hier (wie bei allen von Ihnen definierten "Textcontainern" bitte, um welche Art von Container es sich handeln soll.
+
+(2) Die Views sollen einzig die Namen der Gruppen enthalten; die strukturellen Elemente sollen in den Gruppen definiert werden.
+
+(3) Ihre Views sind zum Großteil mit Gruppen identisch. Und das macht keinen Sinn. Nehmen wir die beiden Views Index und Registrierung: Es macht keinen Sinn, die Registrierung und den Log-In auf getrennten Seiten unterzubringen. Es wirkt außerdem abschreckend, wenn in diesen beiden Ansichtn sonst einzig die Texteinblendung "Escape the Haunted House" zu sehen ist. Gehen Sie deshalb bitte nochmal die Ansichten durch: In einzelnen Fällen kann es natürlich sein, dass eine Gruppe gleich einer Ansicht ist, aber wenn wie bei Ihnen praktisch alle Gruppen jeweils eine Ansicht sein sollen, dann haben Sie eindeutig die Planung vernachlässigt.
+
+(4) In der aktuellen Form sorgen die beiden eben genannten Views sogar dafür, dass niemand sich registrieren kann.
+
+(5) Die Gruppen XIII. unx XIV. sind redundant.
+
+(6) Noch ein Tipp: Denken Sie daran, dass Sie über PHP einzelne Elemente aber auch ganze Gruppen in Ansichten austauschen können. Um das zu verdeutlichen können Sie ja zusätzliche Gruppen definieren, die dann die auszutauschenden Gruppen beinhalten. (Ggf. mit einem kurzen Kommentar, der den Sinn dieser Gruppe verdeutlicht.)
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 4 / 10
+- Knappe Form: 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen): 1
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw.: bis -5
+
+Wertung 4: Gruppierungen: 5 / 5
+- für jede sinnvolle Gruppe: 1
+
+Wertung 5: Ansichten: 2 / 5
+- für jede sinnvolle Ansicht: 1
+
+Bitte beachten Sie mein Feedback im Verzeichnis Gruppen_de. So lange Sie die Gruppen nicht als Dateien dort programmieren kann ich den HTML-Teil nicht werten.
+-->
