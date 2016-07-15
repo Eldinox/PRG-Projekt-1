@@ -1,24 +1,22 @@
 ﻿=======================================
-=== Projektidee Eldinox, 2016-04-05 ===
+=== Projektidee Eldinox, 2016-07-15 ===
 =======================================
 
 Projektidee
 
-Meine Idee für Projekt 1 ist ein Spiel. 
-Dabei soll ein Spieler Gegenstände in bestimmter Reihenfolge einsammeln.
-Währenddessen muss er Gefahren wie Projektilen und Gegnern ausweichen, die
-versuchen den Spieler zu töten wenn er in Sichtreichweite kommt.
-Wurden alle Gegenstände eingesammelt erreicht man das nächste Level.
-Für jedes Level gibt es eine Zeitvorgabe.
-Die übrige Zeit wird nach jedem Level zum Score addiert.
-Wird man getroffen oder die Zeit läuft ab verliert man.
+Meine Idee für Projekt 1 ist ein Spiel.
+Darin soll der in einem Spukhaus gefangene Spieler sich durch die Stockwerke
+des Hauses kämpfen, indem er den Charakter durch die Labyrinthartigen Level steuert
+und die auf dem Spielfeld verteilten Schlüssel aufsammelt. Dabei versuchen einige 
+Gegner ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in 
+Sichtreichweite ist. Für jedes Level hat man eine Bestimmte Zeitvorgabe. Verbleibende 
+Zeit wird nach dem Level zum Score addiert. Wird man von Gegnern getroffen oder die Zeit 
+läuft ab verliert man. Vor Beginn des Spiels hat man im Menü die Wahl zwischen Singleplayer 
+(Storymodus gegen KI) und Multiplayer (Spieler werden in zwei Teams aufgeteilt. Die eine 
+Seite versucht dem Haus zu entkommen, die andere übernimmt die Rolle der Gegner).
 Der Score wird am Ende gespeichert und die 10 besten Highscores können in einer
 Liste online angesehen werden.
 
-Webbasiert: 
-Um das Spiel webbasiert zu gestalten wird man die Wahl zwischen Singleplayer 
-(Storymodus) und Multiplayer(noch keine genaue Idee dazu aber vermutlich ein
-1 gegen 1 oder Last-Man-Standing Modus) haben bevor das Spiel startet.
 
 ===================================
 === Feedback Alpers, 2016-04-12 ===
