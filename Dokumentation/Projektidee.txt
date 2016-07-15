@@ -55,3 +55,9 @@ Wertung 2: Projektbeschreibung: gesamt: 7 / 10
 ===================================
 
 Guter ersten Ansatz für Webbasierung. Daran und an der Interaktion zwischen Mensch und Spiel sollten Sie noch arbeiten.
+
+===================================
+=== Feedback Alpers, 2016-07-15 ===
+===================================
+
+Schade, dass Sie diesen Teil nicht überarbeitet haben.
