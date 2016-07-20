@@ -1,6 +1,6 @@
 <?php
-	<!-- <head>Container mit Metadaten, Titel und Stylesheet werden auf jeder Seite oben included
-		auf der sie benötigt werden. --> 
+	<!-- <head>Container mit Metadaten, Titel und Stylesheet wird auf jeder Seite oben included
+		auf der er benötigt wird. --> 
 	include 'Gruppen_de/headerAndBackground.php';
 ?>
 <body>
@@ -50,6 +50,10 @@
 				elseif(strpos($url, 'password_error') !== false)
 				{
 					$regist_status = 'Das Passwort wurde nicht korrekt wiederholt';
+				}
+				elseif(strpos($url, 'login_error') !== false)
+				{
+					$regist_status = 'Benutzername oder Passwort wurden falsch eingegeben';
 				}
 				elseif(strpos($url, 'register_success') !== false)
 				{
