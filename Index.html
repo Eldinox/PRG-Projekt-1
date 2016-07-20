@@ -1,25 +1,76 @@
-<!DOCTYPE html>
-<html lang=de>
-	<head>
-		<meta charset=UTF-8>
-		<title>Login - Escape the Haunted House</title>
-		<link rel=stylesheet href=backgroundcolorSheet.css type=text/css>
-	</head>
-	<body>
-		<header>
-			<h1>Escape the Haunted House</h1>  <!-- Vielleicht später als Banner -->
-		</header>	
-		<main>
-		<!-- MainContainer zeigt später in der Bildschirmmitte die Möglichkeit zum einloggen oder 
-			registrieren falls noch kein Account besteht -->
-			<h2>Login!</h2>
-				<p><label for=username>Benutzername: </label><input type=username name=username required autofocus></p>
-				<p><label for=password>Passwort: </label><input type=password name=password></p>
-				<p>
-					<a id=button href=Mainmenu.html>Login</a>
-					<a id=button href=Registration.html>Hier Registrieren</a>
-				</p>
+<?php
+	<!-- <head>Container mit Metadaten, Titel und Stylesheet werden auf jeder Seite oben included
+		auf der sie benötigt werden. --> 
+	include 'Gruppen_de/headerAndBackground.php';
+?>
+<body>
+	<header>
+	<!-- Im Header: Banner mit Spieltitel, darunter die Felder zum einloggen, wenn man nicht bereits
+		eingeloggt ist oder eine begrüßende Meldung, wenn man eingeloggt ist (also eine Session mit 
+		der ID des jeweiligen Benutzers vorliegt). -->
+	<h1>Escape the Haunted House</h1>  
+		<?php
+			if(isset($_SESSION['id']))
+			{
+				<!-- echo 'Willkommen ...'; -->
+			}
+			else
+			{
+				echo 	"<form method='post' action='Gruppen_de/login.php'>
+						<input type='text' name='username' placeholder='Benutzername' autofocus required>
+						<input type='password' name='password' placeholder='Passwort' required>
+						<button type='submit' name='login'>Login</button>
+						</form>";
+			}
+		?>
+	</header>	
+	<main>
+	<!-- Im MainContainer: Wenn man nicht eingeloggt ist die Felder um einen neuen Account zu registrieren,
+		wenn man eingeloggt ist sieht man die Hauptmenübuttons und sein Spielerprofil. -->
+		<?php
+			if(isset($_SESSION['id']))
+			{
+				<!-- Auf diese Weise muss keine eigene Seite für das Hauptmenü erstellt werden. Ist das im 
+				Sinne der Aufgabe oder sollte ich trotzdem eine haben und von hier auf sie weiterleiten, wenn 
+				man eingeloggt ist? -->
+				include 'Gruppen_de/mainMenuButtons.php';
+				include 'Gruppen_de/userProfile.php';
+			}
+			else
+			{
+				<!-- Der url wird auf eine angefügte Fehlermeldung nach dem registrieren oder einloggen 
+				überprüft und die jeweilige Meldung wird im Statusbereich ausgegeben. -->
+				$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+				$regist_status = 'Bitte f&uuml;llen Sie alle Felder aus um einen Account zu erstellen';
+
+				if(strpos($url, 'username_error') !== false)
+				{
+				$regist_status = 'Dieser Benutzername existiert bereits';
+				}	
+				elseif(strpos($url, 'password_error') !== false)
+				{
+					$regist_status = 'Das Passwort wurde nicht korrekt wiederholt';
+				}
+				elseif(strpos($url, 'register_success') !== false)
+				{
+					$regist_status = 'Registrierung erfolgreich. Sie k&ouml;nnen sich nun einloggen';
+				}
+				echo 	"<h2>Noch keinen Account? Jetzt registrieren</h2>
+						<form method='post' action='Gruppen_de/register.php'>
+						<p><input type='text' name='registerName' placeholder='Benutzername' required></p>
+						<p><input type='password' name='registerPassword' placeholder='Passwort' required></p>
+						<p><input type='password' name='checkRegisterPassword' placeholder='Passwort wiederholen' required></p>
+						<p><button type='submit' name='register'>Registrieren</button></p>
+						</form>";
+
+						echo $regist_status;
+			}
+		?>	
 		</main>
+		<aside>
+		<!-- Im AsideContainer: Ein Dialogcontainer mit Neuigkeiten zum Spiel wird included -->	
+			<?php include 'Gruppen_de/news.php';?>
+		</aside>
 	</body>
 </html>
 
