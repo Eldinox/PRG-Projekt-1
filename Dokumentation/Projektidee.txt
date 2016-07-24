@@ -5,6 +5,8 @@
 Projektidee
 
 Meine Idee für Projekt 1 ist ein Spiel.
+Zu Beginn muss man einen Account erstellen und sich einloggen.
+Im Hauptmenü ist dann die persönliche Statistik zu sehen und man kann das Spiel starten. 
 Darin soll der in einem Spukhaus gefangene Spieler sich durch die Stockwerke
 des Hauses kämpfen, indem er den Charakter durch die Labyrinthartigen Level steuert
 und die auf dem Spielfeld verteilten Schlüssel aufsammelt. Dabei versuchen einige 
