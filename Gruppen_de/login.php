@@ -1,4 +1,11 @@
 <?php
+	//Login Form
+	echo "<form method='post' action='Gruppen_de/login.php'>
+			<input type='text' name='username' placeholder='Benutzername' autofocus required>
+			<input type='password' name='password' placeholder='Passwort' required>
+			<button type='submit' name='login'>Login</button>
+			</form>";
+
 	if(isset($_POST['login']))
 	{
 		session_start();

@@ -1,5 +1,5 @@
 ﻿<!-- 
-		=== Strukturelle Elemente (15.07.2016) ===
+		=== Strukturelle Elemente (24.07.2016) ===
 
 		-001-		Hintergrundbild
 		-002-		Hintergrundmusik
@@ -7,7 +7,7 @@
 		-004-		Label-Container / "Username:" 	
 		-005- 		Label-Container / "Passwort:"
 		-006-		Label-Container / "Passwort wiederholen:"
-		-007-		Dialog-Container / Status der Registrierung (Daten in Ordnung / bereits vergeben)
+		-007-		Dialog-Container / Status der Registrierung/des Logins (Name vergeben / Passwort falsch)
 		-008-		Dialog-Container / Neuigkeiten
 		-009-		Label-Container / Username
 		-010-		Label-Container / "Beste Zeit im Singleplayer"
@@ -63,7 +63,7 @@
 
 
 		
-		=== Gruppen (15.07.2016) ===
+		=== Gruppen (24.07.2016) ===
 
 		I. login
 		-004-		Label-Container / "Username:" 	
@@ -77,7 +77,6 @@
 		-004-		Label-Container / "Username:" 	
 		-005- 		Label-Container / "Passwort:"
 		-006-		Label-Container / "Passwort wiederholen:"
-		-007-		Dialog-Container / Status der Registrierung
 		-026-		Input-Container / Eingabe Username
 		-027-	 	Input-Container / Eingabe Passwort
 		-028-		Input-Container / Wiederholung Passwort
@@ -160,18 +159,22 @@
 		-001-		Hintergrundbild
 		-002-		Hintergrundmusik 
 		-003-		Header-Container / Header dieser Seite
+
+		XVI. loginRegisterStatus
+		-007-		Dialog-Container / Status der Registrierung/des Logins
 		
 		
-		=== Ansichten (15.07.2016) ===
+		=== Ansichten (24.07.2016) ===
 
 		--- view_Index ---
 		I. login
 		II. register
-		III.	news
+		III. news
 		XV. headerAndBackground
+		XVI. loginRegisterStatus
 		
 		--- view_Mainmenu ---
-		III.	news
+		III. news
 		IV. mainMenu
 		V. userProfile
 		XV. headerAndBackground
@@ -194,11 +197,13 @@
 
 		--- view_Intro ---
 		X. intro
+		XV. headerAndBackground
 
 		--- view_InGame ---
 		XI. playerStatus
 		XII. playfield
 		XIII. pausemenu
+		XV. headerAndBackground
 
 		--- view_GameEnd ---
 		XIV. gameEnd
