@@ -29,3 +29,32 @@
 		}
 	}
 ?>
+
+<!--
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+Laut strukt.html sollen in dieser Gruppe die folgenden Container enthalten sein:
+
+-004-		Label-Container / "Username:" 	
+-005- 		Label-Container / "Passwort:"
+-026-		Input-Container / Eingabe Username
+-027-	 	Input-Container / Eingabe Passwort
+-030-		Schaltfläche / "Einloggen"
+-031-		Schaltfläche / "Registrieren"
+
+Sie haben hier einen bösen Logikfehler einprogrammiert:
+
+Diese Datei hat den Namen login.php und befindet sich im Verzeichnis Gruppen_de. So wie Sie das öffnende Tag des Formulars programmiert haben wird dieses Dokument "versuchen" die eingegebenen Daten an sich selbst weiterzuleiten, damit es selbst diese Daten auswertet. Das kann nicht funktionieren.
+
+In der Definiton der Gruppe fehlt ein Element: Das Formular.
+
+Umgekehrt haben Sie im Formular in dieser Datei die Labels nicht programmiert.
+
+Weiterhin sollten Sie spätestens bei der Programmierung erkannt haben, dass die strukturellen Elemente 30 und 31 so nicht umsetzbar sind: Über den submit-input können NutzerInnen sich momentan entweder einloggen oder registrieren. Damit beides möglich ist, müssen Sie noch etwas in der Definition der Gruppe ändern.
+
+Außerdem gilt weiterhin: Im Verzeichnis Gruppen_de sollen sich ausschließlich Gruppen befinden, keine PHP-Skripte. (Für den Fall, dass Sie in der Aufgabenstellung etwas missverstanden haben: Das Verzeichnis Gruppen_de ist nicht das Wurzelverzeichnis des Projekts.
+
+Zu den meisten der übrigen Dateien im Verzeichnis Gruppen_de werde ich nichts schreiben, weil die Probleme da identisch sind.
+-->

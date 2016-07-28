@@ -348,4 +348,71 @@ Wertung 5: Ansichten: 2 / 5
 - für jede sinnvolle Ansicht: 1
 
 Bitte beachten Sie mein Feedback im Verzeichnis Gruppen_de. So lange Sie die Gruppen nicht als Dateien dort programmieren kann ich den HTML-Teil nicht werten.
+
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+== I - Strukturelle Elemente ==
+Bei rund einem Viertel der strukturellen verwenden Sie bei den strukturellen Elementen noch Bezeichnungen, die anstelle der Bedeutung für die Struktur die Funktion des Elements beschreiben oder die zu allgemein sind. Hier zwei Beispiele für ersteres:
+
+-016-		Dialog-Container / Erklärung zum Spiel
+Ein Dialog ist eine Funktion, für die ein Teil der Struktur verwendet wird. Das zugehörige strukturelle Element könnte beispielsweise ein Absatz sein, der für einen Dialog verwendet wird. (Wenn Sie bereits Programmieren 2 belegen oder belegt haben, werden Sie feststellen, dass dort nicht so klar zwischen Struktur und Funktion differenziert wird, wie in diesem Kurs.)
+
+-032-		SpielStartElement / "Spiel starten"
+Genauso haben wir hier die Funktion des Spielstarts, die z.B. durch eine Schaltfläche in der Struktur aufgerufen werden kann. Gehen Sie hier sicher, dass das mit den Mitteln möglich ist, die Sie im Kurs kennen gelernt haben.
+
+Jetzt ein Beispiel für den zweiten Punkt:
+
+-054-		Interaktionsmöglichkeit / Spieler läuft nach oben
+Hier müssen Sie konkreter werden, denn so lange nicht klar ist, wie Sie vorgehen wollen, ist es auch nicht möglich, die Struktur oder die Funktionalität zu realisieren.
+
+== II - Gruppen ==
+
+Der Sinn der Definition von Gruppen besteht darin, dass Sie nahezu alles, was an mehreren Stellen identisch vorkommen soll nur einmal programmieren müssen. Für das Eifügen nutzen Sie dann die PHP-Funktion include(). Es gibt zwar Fälle, in denen das nicht praktikabel ist (z.B würden Sie den Submit-Input eines Formulars nicht includen, weil der Funktionsaufruf mit include() nahezu den gleichen Programmieraufwand macht wie die Programmierung des input type submit.
+
+Der Vorteil dieser Vorgehensweise besteht darin, dass Sie Änderungen nur an einer Stelle durchführen müssen. Wenn dann später (was bei praktisch jedem Projekt der Fall ist) Änderungen erfolgen, dann gibt es so nicht die Gefahr, dass an einer Stelle vergessen wurde, die Änderungen durchzuführen.
+
+I. login und II. register
+sind ein Beispiel für zwei Gruppen, die nahezu identisch sind und bei die Sie dementsprechend zusammenführen sollten. Wenn Sie hier unsicher sind, dann denken Sie daran, dass es keine inhaltliche Vorgabe dafür gibt, was eine Gruppe sein soll. Es spricht auch nichts dagegen Gruppen aus Gruppen zu bilden.
+
+== III - Ansichten ==
+
+Hier haben Sie leider noch etwas übersehen. Vergleichen Sie einmal die folgenden Ansichten und überlegen Sie sich, ob die sich tatsächlich strukturell unterscheiden:
+--- view_Options ---
+VI. optionsmenu
+XV. headerAndBackground
+
+--- view_Highscore ---
+VII. highscoreList
+XV. headerAndBackground
+
+--- view_Help ---
+VIII. helpmenu
+XV. headerAndBackground
+
+--- view_GamemodeSelect ---
+IX. modeSelection
+XV. headerAndBackground
+
+--- view_Intro ---
+X. intro
+XV. headerAndBackground
+
+(Na gut, an der Frage können Sie bereits erkennen, dass diese Ansichten sich in struktureller Hinsicht gerade nicht unterscheiden. Also entwickeln Sie hier bitte eine Lösung, damit diese Ansichten zu einer Ansicht zusammengefasst werden. Tipp: Unter Umständen brauchen Sie eine neue Gruppe und neue strukturelle Elemente.)
+
+== IV - HTML ==
+
+Das was jetzt kommt ist eine der wichtigsten Lehren, die Sie aus diesem Kurs mitnehmen sollten: Gewöhnen Sie sich bitte eine systematische Arbeitsweise an und beachten Sie Hinweise.
+
+Denn aktuell haben Sie 16 Gruppen definiert, aber lediglich 7 programmiert. Gleichzeitig sind Sie zum Teil schon dabei die Serveranbindung zu realisieren.
+
+Das ist ein typischer Einsteigerfehler, der am Ende dazu führen wird, dass Sie (und auch das gilt in allen Projekten) demnächst voraussichtlich einen Großteil Ihrer Arbeit wieder löschen müssen.
+
+Deshalb: 
+- Überarbeiten Sie zuerst die Beschreibung entsprechend des Feedbacks.
+- Überarbeiten Sie dann die Struktur entsprechend des Feedbacks.
+- Programmieren Sie dann erst die Gruppen, dann die Ansichten entsprechend des Feedbacks.
+- Erst wenn all das erledigt ist sollten Sie mit dem PHP-Teil weiter machen.
+- Und erst ganz am Ende macht die Einbindung der DB Sinn.
 -->
