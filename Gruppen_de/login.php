@@ -14,7 +14,7 @@
 
 		//Später:Passwort für den angegebenen Benutzer wird der Datenbank entnommen und entschlüsselt*/
 
-		if(//Keine Übereinstimmung zwischen eingegebenem Benutzernamen und entschlüsseltem Password)
+		if(//Keine Übereinstimmung zwischen eingegebenem Benutzernamen und entschlüsseltem Passwort)
 		{
 			//Weiterleitung zum Loginbereich mit Fehlermeldung im url
 			header('Location: ../Index.html?login_error');
@@ -23,9 +23,9 @@
 		else
 		{
 			//Später:Wenn Übereinstimmung gefunden, wird für diesen Benutzer eine Session erstellt
-				$_SESSION['id'] = $row['user_id'];
-				$_SESSION['name'] = $row['username'];
-				header('Location: ../Index.html');
+			$_SESSION['id'] = $row['user_id'];
+			$_SESSION['name'] = $row['username'];
+			header('Location: ../Index.html');
 		}
 	}
 ?>

@@ -19,5 +19,25 @@
 	{
 		$logreg_status = 'Registrierung erfolgreich. Sie k&ouml;nnen sich nun einloggen';
 	}
+	elseif(strpos($url, 'options') !== false)
+	{
+		$logreg_status = '';
+		if(strpos($url, 'pw_error') !== false)
+		{
+			$logreg_status = 'Aktuelles Passwort falsch eingegeben';
+		}
+		elseif(strpos($url, 'pwrep_error') !== false)
+		{
+			$logreg_status = 'Neues Passwort falsch wiederholt';
+		}
+		elseif(strpos($url, 'pwrep_success') !== false)
+		{
+			$logreg_status = 'Passwort erfolgreich ge&auml;ndert';
+		}
+		elseif(strpos($url, 'newpic_success') !== false)
+		{
+			$logreg_status = 'Profilbild erfolgreich ge&auml;ndert. Loggen Sie sich neu ein um die &Auml;nderung zu sehen';
+		}
+	}
 	echo $logreg_status;
 ?>
