@@ -1,24 +1,32 @@
 ﻿=======================================
-=== Projektidee Eldinox, 2016-07-15 ===
+=== Projektidee Eldinox, 2016-09-02 ===
 =======================================
 
 Projektidee
 
 Meine Idee für Projekt 1 ist ein Spiel.
-Zu Beginn muss man einen Account erstellen und sich einloggen.
-Im Hauptmenü ist dann die persönliche Statistik zu sehen und man kann das Spiel starten. 
-Darin soll der in einem Spukhaus gefangene Spieler sich durch die Stockwerke
-des Hauses kämpfen, indem er den Charakter durch die Labyrinthartigen Level steuert
-und die auf dem Spielfeld verteilten Schlüssel aufsammelt. Dabei versuchen einige 
-Gegner ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in 
-Sichtreichweite ist. Für jedes Level hat man eine Bestimmte Zeitvorgabe. Verbleibende 
-Zeit wird nach dem Level zum Score addiert. Wird man von Gegnern getroffen oder die Zeit 
-läuft ab verliert man. Vor Beginn des Spiels hat man im Menü die Wahl zwischen Singleplayer 
-(Storymodus gegen KI) und Multiplayer (Spieler werden in zwei Teams aufgeteilt. Die eine 
-Seite versucht dem Haus zu entkommen, die andere übernimmt die Rolle der Gegner).
-Der Score wird am Ende gespeichert und die 10 besten Highscores können in einer
-Liste online angesehen werden. 
 
+Vor dem Spielstart:
+Zu Beginn muss man einen Account erstellen und sich einloggen.
+Im Hauptmenü ist dann die persönliche Statistik zu sehen, man kann Einstellungen vornehmen, die Bestenliste ansehen oder das Spiel starten.
+Beim Start hat man die Wahl zwischen Singleplayermodus oder Multiplayermodus.
+
+Ablauf des Spiels:
+Nach einem kurzen Intro findet sich der Spieler in einem Spukhaus wieder.
+Dieses besteht aus Labyrinthartig aufgebauten Stockwerken.
+In jedem Stockwerk muss der Charakter durch die Gänge gesteuert werden bis er alle dort verstreuten Schlüsselfragmente gefunden und mit einem Tastendruck aufgesammelt hat. Wurden alle Fragmente gefunden lässt sich damit die Tür zum nächsten Stockwerk öffnen.
+Die Schwierigkeit dieser Aufgabe nimmt dabei von Stockwerk zu Stockwerk zu, indem zB. das Sichtfeld durch Dunkelheit eingeschränkt wird oder Gegner erscheinen, die versuchen ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in 
+Sichtreichweite ist. Diese gilt es zu vermeiden.
+Für jedes Level hat man eine Bestimmte Zeitvorgabe. Verbleibende Zeit wird nach dem Level zum Score addiert. Wird man von Gegnern getroffen oder die Zeit läuft ab verliert man.
+Erreicht man die letzte Tür gelangt man nach draußen, sieht den Endscore und gegebenenfalls den neu erreichten Rang oder die neue Bestzeit.
+
+Der Singleplayermodus:
+Im Singleplayer erlebt man die Geschichte des Charakters, den man steuert. Das Spukhaus besteht aus 8 Stockwerken und die Gegner werden von einer KI gesteuert.
+In diesem Modus geht es darum eine möglichst gute Zeit zu erreichen.
+
+Der Multiplayermodus:
+Im Multiplayer werden die Spieler in zwei Teams eingeteilt. Das eine Team versucht aus dem Haus zu entkommen während das andere die Rolle der Gegner übernimmt. Das Haus besteht nur aus einem Stockwerk (um die Runden kurz zu halten).
+Schafft das erste Team in der vorgegebenen Zeit zu entkommen bekommt jeder im Team einen Sieg gutgeschrieben. Schaffen sie es nicht bekommt jeder im Gegnerteam einen Sieg.
 
 ===================================
 === Feedback Alpers, 2016-04-12 ===
