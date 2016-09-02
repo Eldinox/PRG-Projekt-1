@@ -26,7 +26,7 @@ In diesem Modus geht es darum eine möglichst gute Zeit zu erreichen.
 
 Der Multiplayermodus:
 Im Multiplayer werden die Spieler in zwei Teams eingeteilt. Das eine Team versucht aus dem Haus zu entkommen während das andere die Rolle der Gegner übernimmt. Das Haus besteht nur aus einem Stockwerk (um die Runden kurz zu halten).
-Schafft das erste Team in der vorgegebenen Zeit zu entkommen bekommt jeder im Team einen Sieg gutgeschrieben. Schaffen sie es nicht bekommt jeder im Gegnerteam einen Sieg.
+Schafft das erste Team in der vorgegebenen Zeit zu entkommen bekommt jeder im Team einen Sieg gutgeschrieben. Schaffen sie es nicht bekommt jeder im Gegnerteam einen Sieg. 
 
 ===================================
 === Feedback Alpers, 2016-04-12 ===
