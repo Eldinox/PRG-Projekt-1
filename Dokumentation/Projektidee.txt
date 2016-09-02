@@ -69,3 +69,15 @@ Guter ersten Ansatz für Webbasierung. Daran und an der Interaktion zwischen Men
 ===================================
 
 Schade, dass Sie diesen Teil nicht überarbeitet haben.
+
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+Bitte erstellen Sie keine manuellen Zeilenumbrüche innerhalb von Zeilen. Das ist im Team grundsätzlich schlecht, weil Sie es damit anderen Teammitgliedern erschweren, Ihre Einträge zu lesen. Es gibt in praktisch allen Editoren die Option "automatischer Zeilenumbruch", die bewirkt, dass bei Ihnen ein Zeilenumbruch angezeigt wird, ohne das im Dokument einer eingefügt wird.
+
+Leider haben Sie hier noch immer nicht konkretisiert, wie insbesondere die interaktiven Elemente ausfallen sollen. Sie schreiben lediglich, dass es sie geben soll, aber das genügt an der Stelle nicht.
+
+WICHTIG: 
+
+Genereller Hinweis zu commits: Bitte vergeben Sie bei jedem commit eine klare Zusammenfassung. Wenn Sie einen commit beispielsweise mit "update" bezeichnen, dann hilft das dem Rest des Teams überhaupt nicht weiter. Im Gegenteil: Jeder Commit ist ein Update des Spiels. Die Beschreibung eines Commit sollte aber deutlich machen a) wo und b) was geändert wurde. Einzig Ausnahme: commits im Stil von "Info für alle" oder "Warnung!" sind nicht sonderlich präzise, können aber dann verwendet werden, wenn ein tatsächlich für alle Teammitglieder wichtiger Hinweis erfolgt.

@@ -7,3 +7,12 @@
 	echo "<form action='Index.html'><button>Highscore</button></form>";
 	echo "<form action='Gruppen_de/logout.php'><button>Ausloggen</button></form>";
 ?>
+
+<!--
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+Es ist unnötig, dass Sie hier jede Zeile mit einem einzelnen echo() versehen. Notieren Sie doch ein echo( am Anfang und ein ); am Ende.
+
+-->
