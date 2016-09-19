@@ -1,5 +1,5 @@
 ﻿<!-- 
-		=== Strukturelle Elemente (24.07.2016) ===
+		=== Strukturelle Elemente (19.09.2016) ===
 
 		-001-		Hintergrundbild
 		-002-		Hintergrundmusik
@@ -7,18 +7,18 @@
 		-004-		Label-Container / "Username:" 	
 		-005- 		Label-Container / "Passwort:"
 		-006-		Label-Container / "Passwort wiederholen:"
-		-007-		Dialog-Container / Status der Registrierung/des Logins (Name vergeben / Passwort falsch)
-		-008-		Dialog-Container / Neuigkeiten
+		-007-		Absatz / Status der Registrierung/des Logins (Name vergeben / Passwort falsch)
+		-008-		Absatz / Neuigkeiten
 		-009-		Label-Container / Username
 		-010-		Label-Container / "Beste Zeit im Singleplayer"
 		-011-		Label-Container / ... Spiele von ... Spielen gewonnen ("Winrate in %")
 		-012-		Label-Container / Ranglistenplatz
 		-013-		---
-		-014-		Schaltfläche / "Passwort speichern"
-		-015-		Schaltfläche / "Bild speichern"
-		-016-		Dialog-Container / Erklärung zum Spiel
+		-014-		Schaltfläche (Button) / "Passwort speichern"
+		-015-		Schaltfläche (Button) / "Bild speichern"
+		-016-		Absatz / Erklärung zum Spiel
 		-017-		---
-		-018-		Dialog-Container / kleines Intro in die Geschichte
+		-018-		Absatz / kleines Intro in die Geschichte
 		-019-		Label-Container / Gesundheitszustand
 		-020-		Label-Container / Score
 		-021-		Label-Container / verbleibende Zeit
@@ -30,19 +30,19 @@
 		-027-	 	Input-Container / Eingabe Passwort (Typ Password)
 		-028-		Input-Container / Wiederholung Passwort (Typ Password)
 		-029-		Input-Container / Suche von Spielern um deren Profil anzuzeigen
-		-030-		Schaltfläche / "Einloggen"
-		-031-		Schaltfläche / "Registrieren"
+		-030-		Schaltfläche (Button) / "Einloggen"
+		-031-		Schaltfläche (Button) / "Registrieren"
 		-032-		SpielStartElement / "Spiel starten"
 		-033-		OptionsElement / "Optionen"
 		-034-		HilfeElement / "Hilfe"
 		-035-		HighscoreListenElement / "Highscoreliste"
 		-036-		LogoutElement / "Ausloggen"
 		-037-		ZumHauptmenueElement / "Zurück zum Hauptmenü"
-		-038-		Schaltfläche / "Singleplayer"
-		-039-		Schaltfläche / "Multiplayer"
+		-038-		Schaltfläche (Button) / "Singleplayer"
+		-039-		Schaltfläche (Button) / "Multiplayer"
 		-040-		SinglePlayerElement / "Singleplayer Modus"
 		-041-		MultiplayerElement / "Multiplayer Modus"
-		-042-		Schaltfläche / "Skip"
+		-042-		Schaltfläche (Button) / "Skip"
 		-043-		FortsetzenElement / "Fortsetzen"
 		-044-		NeuStartElement / "Neu Starten"
 		-045-		Tabelle 2x3 / zeigt Spielerstatistik
@@ -54,16 +54,16 @@
 		-051-		Spielobjekt / Item
 		-052-		Spielobjekt / Gegner
 		-053-		Spielobjekt / Hindernis
-		-054-		Interaktionsmöglichkeit / Spieler läuft nach oben
-		-055-		Interaktionsmöglichkeit / Spieler läuft nach unten
-		-056-		Interaktionsmöglichkeit / Spieler läuft nach rechts
-		-057-		Interaktionsmöglichkeit / Spieler läuft nach links
-		-058-		Interaktionsmöglichkeit / Spieler benutzt Spezialfähigkeit
+		-054-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach oben
+		-055-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach unten
+		-056-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach links
+		-057-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach rechts
+		-058-		Interaktionsmöglichkeit / Spielfigur benutzt Spezialfähigkeit
 		-059-		Interaktionsmöglichkeit / Spiel pausieren
 
 
 		
-		=== Gruppen (24.07.2016) ===
+		=== Gruppen (19.09.2016) ===
 
 		I. login
 		-004-		Label-Container / "Username:" 	
@@ -84,7 +84,7 @@
 		
 		III. news
 		-003-		Header-Container / Header ("Neuigkeiten")
-		-008-		Dialog-Container / Neuigkeiten 
+		-008-		Absatz / Neuigkeiten 
 
 		IV. mainMenu
 		-032-		SpielStartElement / "Spiel starten"
@@ -119,7 +119,7 @@
 		-046-		Tabelle 3x10 / zeigt die besten 10 gespeicherten Spielstände
 
 		VIII. helpmenu
-		-016-		Dialog-Container / Erklärung zum Spiel
+		-016-		Absatz / Erklärung zum Spiel
 		-037-		ZumHauptmenueElement / "Zurück zum Hauptmenü"
 
 		IX. modeSelection
@@ -128,7 +128,7 @@
 		-041-		MultiplayerElement / "Multiplayer Modus"
 
 		X. intro
-		-018-		Dialog-Container / kleines Intro in die Geschichte
+		-018-		Absatz / kleines Intro in die Geschichte
 		-042-		Schaltfläche / "Skip"
 
 		XI. playerStatus
@@ -145,8 +145,8 @@
 		-053-		Spielobjekt / Hindernis
 		-054-		Interaktionsmöglichkeit / Spieler läuft nach oben
 		-055-		Interaktionsmöglichkeit / Spieler läuft nach unten
-		-056-		Interaktionsmöglichkeit / Spieler läuft nach rechts
-		-057-		Interaktionsmöglichkeit / Spieler läuft nach links
+		-056-		Interaktionsmöglichkeit / Spieler läuft nach links
+		-057-		Interaktionsmöglichkeit / Spieler läuft nach rechts
 		-058-		Interaktionsmöglichkeit / Spieler benutzt Spezialfähigkeit
 		-059-		Interaktionsmöglichkeit / Spiel pausieren
 
@@ -166,7 +166,7 @@
 		-003-		Header-Container / Header dieser Seite
 
 		XVI. loginRegisterStatus
-		-007-		Dialog-Container / Status der Registrierung/des Logins
+		-007-		Absatz / Status der Registrierung/des Logins
 		
 		
 		=== Ansichten (24.07.2016) ===
@@ -178,40 +178,22 @@
 		XV. headerAndBackground
 		XVI. loginRegisterStatus
 		
-		--- view_Mainmenu ---
+		--- view_InMenu ---
 		III. news
 		IV. mainMenu
 		V. userProfile
-		XV. headerAndBackground
-
-		--- view_Options ---
 		VI. optionsmenu
-		XV. headerAndBackground
-
-		--- view_Highscore ---
 		VII. highscoreList
-		XV. headerAndBackground
-
-		--- view_Help ---
 		VIII. helpmenu
-		XV. headerAndBackground
-
-		--- view_GamemodeSelect ---
 		IX. modeSelection
-		XV. headerAndBackground
-
-		--- view_Intro ---
 		X. intro
+		XIV. gameEnd
 		XV. headerAndBackground
 
 		--- view_InGame ---
 		XI. playerStatus
 		XII. playfield
 		XIII. pausemenu
-		XV. headerAndBackground
-
-		--- view_GameEnd ---
-		XIV. gameEnd
 		XV. headerAndBackground
 	-->
 
