@@ -1,0 +1,57 @@
+<?php
+	<!-- <head>Container mit Metadaten, Titel und Stylesheet wird auf jeder Seite oben included
+		auf der er benötigt wird. --> 
+	include 'Gruppen_de/headerAndBackground.php';
+?>
+<body>
+	<header>
+	<h1>Escape the Haunted House</h1> 
+	<!-- Im Header: Banner mit Spieltitel --> 
+	</header>	
+	<main>
+	<!-- Der Link in der Adresszeile wird auf einen Anhang untersucht und je nach Anhang wird etwas anderes im MainContainer angezeigt. Wird zum Beispiel das Wort "options" gefunden, wird das Optionsmenü included. -->
+		<?php
+			$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+			if(strpos($url, 'mainmenu') !== false)
+			{
+				include 'Gruppen_de/mainMenuButtons.php';
+				include 'Gruppen_de/userProfile.php';
+			}
+			elseif(strpos($url, 'modeselection') !== false)
+			{
+				include 'Gruppen_de/modeSelection.php';
+			}
+			elseif(strpos($url, 'options') !== false)
+			{
+				include 'Gruppen_de/optionsmenu.php';
+			}
+			elseif(strpos($url, 'help') !== false)
+			{
+				include 'Gruppen_de/helpmenu.php';
+			}
+			elseif(strpos($url, 'highscore') !== false)
+			{
+				include 'Gruppen_de/highscoreList.php';
+				include 'Gruppen_de/userProfile.php';
+			}
+			elseif(strpos($url, 'intro') !== false)
+			{
+				include 'Gruppen_de/intro.php';
+			}
+			elseif(strpos($url, 'aftergame') !== false)
+			{
+				include 'Gruppen_de/afterGame.php';
+			}
+		?>		
+	</main>
+	<aside>
+	<!-- Im AsideContainer sind weiterhin die News zu sehen, wenn man sich im Hauptmenü befindet. -->
+		<?php 
+			if(strpos($url, 'mainmenu') !== false)
+			{
+				include 'Gruppen_de/news.php';
+			}
+		?>
+	</aside>
+	</body>
+</html>
