@@ -5,14 +5,12 @@
 ?>
 <body>
 	<header>
-	<!-- Im Header: Banner mit Spieltitel, darunter die Felder zum einloggen, wenn man nicht bereits
-		eingeloggt ist oder eine begrüßende Meldung, wenn man eingeloggt ist (also eine Session mit 
-		der ID des jeweiligen Benutzers vorliegt). -->
+	<!-- Im Header: Banner mit Spieltitel, darunter die Felder zum einloggen, wenn man nicht bereits eingeloggt ist oder man wird direkt ins Hauptmenü weitergeleitet wenn man bereits eingeloggt ist (also eine Session mit der ID des jeweiligen Benutzers vorliegt). -->
 	<h1>Escape the Haunted House</h1>  
 		<?php
 			if(isset($_SESSION['id']))
 			{
-				<!-- echo 'Willkommen ...'; -->
+				header('Location: InMenu.html?mainmenu');
 			}
 			else
 			{
@@ -22,23 +20,10 @@
 		?>
 	</header>	
 	<main>
-	<!-- Im MainContainer: Wenn man nicht eingeloggt ist die Felder um einen neuen Account zu registrieren,
-		wenn man eingeloggt ist sieht man die Hauptmenübuttons und sein Spielerprofil. -->
+	<!-- Im MainContainer: Wenn man nicht weitergeleitet wurde ist hier das Formular zum erstellen eines neuen Accounts und der dazugehörige Registrier- und Loginstatus zu sehen, der einen wissen lässt ob die eingegebenen Daten in Ordnung sind. -->
 		<?php
-			if(isset($_SESSION['id']))
-			{
-				<!-- Auf diese Weise muss keine eigene Seite für das Hauptmenü erstellt werden. Ist das im 
-				Sinne der Aufgabe oder sollte ich trotzdem eine haben und von hier auf sie weiterleiten, wenn 
-				man eingeloggt ist? -->
-				include 'Gruppen_de/mainMenuButtons.php';
-				include 'Gruppen_de/userProfile.php';
-			}
-			else
-			{
-				<!-- Include Registrier Form und Status -->
-				include 'Gruppen_de/register.php';
-				include 'Gruppen_de/loginRegisterStatus.php';
-			}
+			include 'Gruppen_de/register.php';
+			include 'Gruppen_de/loginRegisterStatus.php';
 		?>	
 		</main>
 		<aside>
