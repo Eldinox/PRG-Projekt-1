@@ -1,0 +1,4 @@
+Ich habe nun die Gruppen besser definiert und in 3 Ansichten zusammengefasst bin aber durch viel Rumprobieren in den meisten Gruppen noch nicht dazu gekommen das Feedback umzusetzen, sondern habe mich darauf fokusiert, dass es die Gruppen alle gibt und sie passen.
+Als nächstes werde ich mich nun darum kümmern das Feedback so gut wie möglich umzusetzen (nicht dass Sie denken dies sei ignoriert worden).
+
+Im Moment überlege ich, ob es Sinn macht eine eigene Gruppe für den "Zurück zum Hauptmenü"-Button zu erstellen, da dieser an vielen Stellen vorkommt. Ist dies sinnig für ein einzelnes Element?
