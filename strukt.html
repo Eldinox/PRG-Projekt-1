@@ -403,3 +403,93 @@ Deshalb:
 - Erst wenn all das erledigt ist sollten Sie mit dem PHP-Teil weiter machen.
 - Und erst ganz am Ende macht die Einbindung der DB Sinn.
 -->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-10-24 ===
+===================================
+
+=== I - Strukturelle Elemente
+
+== I.1.) Verwendung von Bezeichnungen, die keine Struktur, sondern eine Funktion bezeichnen.
+
+Bsp.:
+-033-		OptionsElement / "Optionen"
+-034-		HilfeElement / "Hilfe"
+-035-		HighscoreListenElement / "Highscoreliste"
+-036-		LogoutElement / "Ausloggen"
+-037-		ZumHauptmenueElement / "Zurück zum Hauptmenü"
+-049-		Schieberegler / Anpassen der Musiklautstärke
+-050-		Spielobjekt / Spielfigur
+-051-		Spielobjekt / Item
+-052-		Spielobjekt / Gegner
+-053-		Spielobjekt / Hindernis
+
+Keines dieser Elemente trägt einen Bezeichner, der etwas mit der Struktur zu tun hätte.
+
+Genau wie in der Beschreibung sind Sie hier gedanklich beim Design, nicht bei der Struktur.
+
+== I.2.) Schaltflächen auch so benennen.
+
+-054-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach oben
+-055-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach unten
+-056-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach links
+-057-		Interaktionsmöglichkeit / Spielfigur bewegt sich auf dem Spielfeld nach rechts
+-058-		Interaktionsmöglichkeit / Spielfigur benutzt Spezialfähigkeit
+-059-		Interaktionsmöglichkeit / Spiel pausieren
+
+Es gibt eine Vielzahl an strukturellen Elementen, die wir verwenden können. An dieser Stelle (vor der Programmierung der Struktur in einer ML, nach dem grundlegenden Entwurf) müssen Sie genauer ausarbeiten, was für ein strukturelles Element das sein soll.
+
+== I.3.) Wo ist das Spielfeld?
+
+Genau wie in der Ausarbeitung der Projektidee haben Sie hier zu allen möglichen Aspekten etwas ausgearbeitet, was nichts mit dem eigentlichen Spiel zu tun hat. So fehlt hier beispielsweise das Spielfeld.
+
+== I.4.) Formulare nochmal nacharbeiten
+
+Bitte lesen Sie sich im Skript nochmal genau durch, was Sie alles für ein Formular brauchen, bzw. was dort genutzt wird, um den Inhalt abzuschicken. Denn das ist keine Schaltfläche.
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 3 / 10
+- Knappe Form (0 - 3 Pk.): 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk.: 2
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. 0 bis 5 Pk. Abzug: -2
+
+=== II.) Gruppen
+
+== II.1.) Duplikate eliminieren
+
+Ein zentraler Aspekt dieser Aufgabe besteht darin, Duplikate zu eliminieren, sodass Sie weniger Arbeit haben, bzw. erkennen, wo sich doppelte Arbeit versteckt.
+
+I. login
+-004-		Label-Container / "Username:" 	
+-005- 		Label-Container / "Passwort:"
+-026-		Input-Container / Eingabe Username
+-027-	 	Input-Container / Eingabe Passwort
+-030-		Schaltfläche / "Einloggen"
+-031-		Schaltfläche / "Registrieren"
+
+II. register
+-004-		Label-Container / "Username:" 	
+-005- 		Label-Container / "Passwort:"
+-006-		Label-Container / "Passwort wiederholen:"
+-026-		Input-Container / Eingabe Username
+-027-	 	Input-Container / Eingabe Passwort
+-028-		Input-Container / Wiederholung Passwort
+-031-		Schaltfläche / "Registrieren"
+
+Und genau das haben Sie hier nicht getan.
+
+== II.2.) Formulare unvollständig.
+
+(Siehe Feedback zu strukturellen Elementen) Sie haben hier keine vollständigen Formulare definiert. Genau darum handelt es sich aber bei beiden Gruppen.
+
+Wertung 4: Gruppierungen: 5 / 5
+- für jede sinnvolle Gruppe: 1
+
+=== III.) Ansichten
+
+Wertung 5: Ansichten: 3 / 5
+- für jede sinnvolle Ansicht: 1
+
+======
+
+Leider haben Sie damit noch nicht die nötigen 20 Punkte erreicht, die nötig sind, damit die Umsetzung in Quellcode bewertet wird.

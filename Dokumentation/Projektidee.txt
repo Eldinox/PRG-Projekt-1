@@ -14,9 +14,9 @@ Beim Start hat man die Wahl zwischen Singleplayermodus oder Multiplayermodus.
 Ablauf des Spiels:
 Nach einem kurzen Intro findet sich der Spieler in einem Spukhaus wieder.
 Dieses besteht aus Labyrinthartig aufgebauten Stockwerken.
-In jedem Stockwerk muss der Charakter durch die Gänge gesteuert werden bis er alle dort verstreuten Schlüsselfragmente gefunden und mit einem Tastendruck aufgesammelt hat. Wurden alle Fragmente gefunden lässt sich damit die Tür zum nächsten Stockwerk öffnen.
-Die Schwierigkeit dieser Aufgabe nimmt dabei von Stockwerk zu Stockwerk zu, indem zB. das Sichtfeld durch Dunkelheit eingeschränkt wird oder Gegner erscheinen, die versuchen ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in 
-Sichtreichweite ist. Diese gilt es zu vermeiden.
+In jedem Stockwerk muss der Charakter durch die Gänge gesteuert werden bis er alle dort verstreuten Schlüsselfragmente gefunden und mit einem Tastendruck aufgesammelt hat. 
+Wurden alle Fragmente gefunden lässt sich damit die Tür zum nächsten Stockwerk öffnen.
+Die Schwierigkeit dieser Aufgabe nimmt dabei von Stockwerk zu Stockwerk zu, indem zB. das Sichtfeld durch Dunkelheit eingeschränkt wird oder Gegner erscheinen, die versuchen ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in Sichtreichweite ist. Diese gilt es zu vermeiden.
 Für jedes Level hat man eine Bestimmte Zeitvorgabe. Verbleibende Zeit wird nach dem Level zum Score addiert. Wird man von Gegnern getroffen oder die Zeit läuft ab verliert man.
 Erreicht man die letzte Tür gelangt man nach draußen, sieht den Endscore und gegebenenfalls den neu erreichten Rang oder die neue Bestzeit.
 
@@ -81,3 +81,78 @@ Leider haben Sie hier noch immer nicht konkretisiert, wie insbesondere die inter
 WICHTIG: 
 
 Genereller Hinweis zu commits: Bitte vergeben Sie bei jedem commit eine klare Zusammenfassung. Wenn Sie einen commit beispielsweise mit "update" bezeichnen, dann hilft das dem Rest des Teams überhaupt nicht weiter. Im Gegenteil: Jeder Commit ist ein Update des Spiels. Die Beschreibung eines Commit sollte aber deutlich machen a) wo und b) was geändert wurde. Einzig Ausnahme: commits im Stil von "Info für alle" oder "Warnung!" sind nicht sonderlich präzise, können aber dann verwendet werden, wenn ein tatsächlich für alle Teammitglieder wichtiger Hinweis erfolgt.
+
+===================================
+=== Feedback Alpers, 2016-10-24 ===
+===================================
+
+=== 1.) Inhaltliches
+
+== 1.1.) Weniger Mischung von Struktur sowie Inhalt und Ablauf des Spiels nötig.
+
+An den Anfang der Beschreibung können Sie eine kurze Zusammenfassung stellen, damit jeder schnell versteht, worum es im Spiel geht.
+
+Leider vermischen Sie die verschiedenen Teilbereiche des Spiels. Im folgenden nehme ich Teile Ihrer o.a. Beschreibung und zeige es an konkreten Beispielen:
+
+Vor dem Spielstart:
+Zu Beginn muss man einen Account erstellen und sich einloggen.
+Im Hauptmenü ist dann die persönliche Statistik zu sehen, man kann Einstellungen vornehmen, die Bestenliste ansehen oder das Spiel starten.
+Beim Start hat man die Wahl zwischen Singleplayermodus oder Multiplayermodus.
+
+=== Anm. zu "Vor dem Spielstart:"
+
+Es ist gut und richtig, dass Sie notiert haben, dass es einen Log-In, eine Registrierung, eine Statistik, eine Highscore-Liste gibt.
+
+Aber die Abfolge, in der all diese Dinge angezeigt werden ist für die nächsten Schritte der Umsetzung nachrangig und sollte erst später im Laufe der Umsetzung festgelegt werden. Wenn Sie als erstes Abläufe und Ansichten beschreiben (und das tun Sie hier), dann gehen Sie eher wie ein Designer vor, nicht wie ein Softwareentwickler.
+
+=== Anm. Ende zu "Vor dem Spielstart:"
+
+Ablauf des Spiels:
+Nach einem kurzen Intro findet sich der Spieler in einem Spukhaus wieder.
+Dieses besteht aus Labyrinthartig aufgebauten Stockwerken.
+In jedem Stockwerk muss der Charakter durch die Gänge gesteuert werden bis er alle dort verstreuten Schlüsselfragmente gefunden und mit einem Tastendruck aufgesammelt hat. 
+Wurden alle Fragmente gefunden lässt sich damit die Tür zum nächsten Stockwerk öffnen.
+Die Schwierigkeit dieser Aufgabe nimmt dabei von Stockwerk zu Stockwerk zu, indem zB. das Sichtfeld durch Dunkelheit eingeschränkt wird oder Gegner erscheinen, die versuchen ihn aufzuhalten, indem sie Wege blockieren oder ihn verfolgen wenn er in Sichtreichweite ist. Diese gilt es zu vermeiden.
+Für jedes Level hat man eine Bestimmte Zeitvorgabe. Verbleibende Zeit wird nach dem Level zum Score addiert. Wird man von Gegnern getroffen oder die Zeit läuft ab verliert man.
+Erreicht man die letzte Tür gelangt man nach draußen, sieht den Endscore und gegebenenfalls den neu erreichten Rang oder die neue Bestzeit.
+
+=== Anm. zu "Ablauf des Spiels:"
+
+Hier das selbe: Sie beschreiben den Ablauf, nicht Inhalt des Spiels. Um das zu verdeutlichen hier die Teile, die an dieser Stelle relevant sind:
+
+Das Spiel besteht aus Labyrinthartig aufgebauten Stockwerken.
+Es gibt Schlüsselfragmente, die eingesammelt werden müssen.
+
+Alles andere in diesem Absatz bezieht sich auf den Ablauf des Spiels. Und das sollten Sie klar erkennbar von diesen Teilen trennen.
+
+=== Anm. Ende zu "Ablauf des Spiels:"
+
+Somit beschränkt sich die für die Entwicklung der Struktur relevante Beschreibung auf folgende Sätze:
+
+- Es gibt einen Log-In, eine Registrierung, eine Statistik und eine Highscore-Liste.
+- Das Spiel besteht aus Labyrinthartig aufgebauten Stockwerken.
+- Es gibt Schlüsselfragmente, die eingesammelt werden müssen.
+- Es gibt eine verschlossene Tür. (Öffnet sich erst nach Einsammeln der Schlüsselfragmente.)
+
+Der praktische Nutzen (und einzige Grund für die Aufgabe, eine eigenständige Beschreibung zu erstellen) liegt darin, dass alle an der Entwicklung beteiligten jetzt genau erkennen können, was alles im Spiel existiert. Dadurch ist es leicht, weitere Elemente hinzuzufügen oder Doubletten zu erkennen.
+
+Es ist dadurch ebenfalls leicht, neue Ideen für Regeln und Abläufe zu entwickeln und auszuformulieren. Bei der Aufstellung, die Sie erstellt haben, ist das dagegen schwer.
+
+== 1.2.) Inhaltliches zum Thema verteilte Anwendung
+
+Sie haben hier einen Anfang ausgearbeitet. In der aktuellen Fassung eröffnet es durchaus die Möglichkeit, Partien mit mehreren hundert Spielern zu eröffnen. Allerdings wirkt es doch eher wie eine Adaption des Spielkonzepts von Titeln wie Counter Strike, bei denen jeweils nur eine handvoll Spieler gegeneinander antritt.
+
+== 1.3.) Inhaltliches zum Thema interaktive Anwendung
+
+Keine Umsetzung der geforderten Kriterien.
+
+== 1.4.) Zusammenfassung
+
+Sie müssen deutlich klarer zwischen den verschiedenen Teilbereichen der Beschreibung trennen. Insbesondere müssen Sie Gedanken an strukturelle Dinge wie "Menüs", "Startseite" usw. an dieser Stelle streichen. Sonst überspringen Sie all das, was gerade wichtig ist, um eine gute Struktur auszuarbeiten. Seiten (genauer gesagt Ansichten) stehen bei der Softwareentwicklung an allerletzter Stelle des Entwurfsprozesses und werden danach kontinuierlich (z.B. im Rahmen der sogenannten Usability) verbessert. Wenn Sie dagegen mit dem Entwurf von Ansichten beginnen, kann kaum ein sinnvolles Ergebnis herauskommen.
+
+Wertung 2: Projektbeschreibung: gesamt: 5 / 10
+- Pro Interaktionsmöglichkeit 1 max. 5: 0
+- Knappe aber klare Beschreibung, max. 5: 5 
+- Werbeslogans u.ä. bis -5: 0 
+- Designaspekte bis -5: 0 
+- Voraussetzung bekannten Wissens bis -5: 0 
