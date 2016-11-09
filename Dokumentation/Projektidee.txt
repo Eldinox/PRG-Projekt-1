@@ -27,7 +27,7 @@ Wird er von einem Gegner erwischt oder erreicht das nächste Stockwerk nicht vor
 
 Mechanik des Spiel:
 -Die Stockwerke des Spukhauses sind labyrinthartig aufgebaut 
--Das Sichtfeld des Spielers ist auf einen Bereich um ihn herum und einen Kegel vor ihn begrenzt (Taschenlampeneffekt)
+-Das Sichtfeld des Spielers ist auf einen Bereich um ihn herum und einen Kegel vor ihm begrenzt (Taschenlampeneffekt)
 -Es gilt die verstreuten Schlüsselfragmente zu suchen und aufzusammeln, die als Ganzes die Tür zum nächsten Stockwerk öffnen
 -Von Level zu Level erhöht sich der Schwierigkeitsgrad. Die Anzahl der Feinde und Schlüsselfragmente nimmt zu und je tiefer das Stockwerk liegt desto dunkler wird es
 -Jedes Level ist in einer vorgegebenen Zeit abzuschließen
