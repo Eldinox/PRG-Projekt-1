@@ -7,7 +7,7 @@
 		<p>Du hast eine neue Bestzeit erreicht.</p>
 		<p>Neue Multiplayer Siegesrate: ###.</p>
 		<p>Rankglistenplatz: ###.</p>
-		<form method='post' action='InMenu.html?intro'><button>Neu Starten</button></form>
-		<form method='post' action='InMenu.html?mainmenu'><button>Zur&uuml;ck zum Hauptmen&uuml;</button></form>
+		<form method='post' action='inmenu.php?intro'><button>Neu Starten</button></form>
+		<form method='post' action='inmenu.php?mainmenu'><button>Zur&uuml;ck zum Hauptmen&uuml;</button></form>
 		</article>"
 ?>

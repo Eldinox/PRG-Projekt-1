@@ -12,6 +12,6 @@
 				<tr><td>09</td><td>###</td></tr>
 				<tr><td>10</td><td>###</td></tr>
 			</table>
-			<form method='post' action='InMenu.html?mainmenu'><button>Zur&uuml;ck zum Hauptmen&uuml;</button></form>
+			<form method='post' action='inmenu.php?mainmenu'><button>Zur&uuml;ck zum Hauptmen&uuml;</button></form>
 		</article>"
 ?>

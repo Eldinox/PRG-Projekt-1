@@ -1,6 +1,4 @@
 <?php
-	//Der url wird auf eine angefügte Fehlermeldung nach dem registrieren oder einloggen 
-	//überprüft und die jeweilige Meldung wird im Statusbereich ausgegeben.
 	$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	$logreg_status = 'Bitte f&uuml;llen Sie alle Felder aus um einen Account zu erstellen';
 	if(strpos($url, 'username_error') !== false)

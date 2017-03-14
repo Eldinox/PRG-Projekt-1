@@ -1,5 +1,4 @@
 <?php
-	//Registrierungs Form
 	echo "<h2>Noch keinen Account? Jetzt registrieren</h2>
 			<form method='post' action='Gruppen_de/register.php'>
 			<p><input type='text' name='registerName' placeholder='Benutzername' required></p>
@@ -11,27 +10,33 @@
 	if(isset($_POST['register']))
 	{
 		session_start();
+		include '../core/database/connect.php';
 		$username = $_POST['registerName'];
 		$password = $_POST['registerPassword'];
 		$check_password = $_POST['checkRegisterPassword'];
 		
-		//Datenbank wird durchsucht, ob der gewählte Name schon vergeben ist
-		//Wenn nicht, dann wird überprüft ob die beiden Passwörter  übereinstimmen
-		if(//Username schon vorhanden)
+		$sql_username_Check = "SELECT username FROM users WHERE username = '$username'";
+		$result_username_check = mysqli_query($con, $sql_username_Check);
+		$user_name_check = mysqli_num_rows($result_username_check);
+		if($user_name_check > 0)
 		{
-			header('Location: ../Index.html?username_error');
+			//username schon vorhanden
+			header('Location: ../index.php?username_error');
 			exit();
 		}
 		elseif($password !== $check_password) 
 		{
-			header('Location: ../Index.html?password_error');
+			//passwort falsch wiederholt
+			header('Location: ../index.php?password_error');
 			exit();
 		}	
 		else
 		{
-			//Passwort wird verschlüsselt
-			//Benutzername und Passwort werden auf der nächsten ID in der Datenbank gespeichert
-			header('Location: ../Index.html?register_success');
+			$encrypted_pw = password_hash($password, PASSWORD_DEFAULT);
+			$sql = "INSERT INTO users(username, password, profile_picture, games, wins, rank, best_time) 
+			VALUES('$username', '$encrypted_pw', '', '0', '0', '0', '0')";
+			$result = mysqli_query($con, $sql);
+			header('Location: ../index.php?register_success');
 		}
 	}
 ?>
