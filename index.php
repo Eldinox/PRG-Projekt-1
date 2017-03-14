@@ -7,7 +7,7 @@
 		<?php
 			if(isset($_SESSION['id']))
 			{
-				header('Location: http://localhost/Projekt1/inmenu.php?mainmenu');
+				header('Location: http://localhost/PRG-Projekt-1/inmenu.php?mainmenu');
 			}
 			else
 			{

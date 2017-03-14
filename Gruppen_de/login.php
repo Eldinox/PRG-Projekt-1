@@ -30,7 +30,7 @@
 			$_SESSION['id'] = $row['user_id'];
 			$_SESSION['name'] = $row['username'];
 			$_SESSION['pic'] = $row['profile_picture'];
-			header('Location: http://localhost/Projekt1/inmenu.php?mainmenu');
+			header('Location: http://localhost/PRG-Projekt-1/inmenu.php?mainmenu');
 		}
 	}
 ?>
