@@ -1,14 +1,13 @@
 <?php
 	include 'core/database/connect.php';
-	include 'headerAndBackground.php';
 ?>
 <body>
 	<header>
 		<h1>Optionen</h1>
 	</header>	
 	<main>
-	<!-- MainContainer zeigt später in der Bildschirmmitte eine Liste mit Einstellungsmöglichkeiten und einen Knopf
-		um zurück zum Hauptmenü zu gelangen -->
+	<!-- MainContainer zeigt spÃ¤ter in der Bildschirmmitte eine Liste mit EinstellungsmÃ¶glichkeiten und einen Knopf
+		um zurÃ¼ck zum HauptmenÃ¼ zu gelangen -->
 		<article>
 			<ul>
 				<li>
